@@ -55,7 +55,7 @@ nav ul li a{
     color: #bbb;
 }
 
-nav ul li a: hover{
+nav ul li a:hover{
     color: #b13030;
 }
 
@@ -65,4 +65,45 @@ nav ul li a: hover{
 #banner img{
     width: 100%;
     margin-bottom: 0;
+}
+.modalDialog{
+  position: fixed;
+  font-family: 'veedana';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(181, 9, 9, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events:none;
+  display: none
+}
+
+.modalDialog:target{
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalDialog div {
+  width: 500px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 10px;
+  background-color: #fff;
+  
+}
+
+.modalDialog p{
+  width: 50%;
+  position: relative;
+  margin-left: 25%;
+  
 }

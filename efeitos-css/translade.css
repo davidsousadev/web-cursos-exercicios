@@ -1,0 +1,30 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.box{
+    outline: 5px solid red;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    transition-property: background-color, transform;
+    transition-duration: 2s, 3s;
+    transition-timing-function: ease-in-out;
+ transition-timing-function: cubic-bezier(0.75, 0.82, 0.65, 1);
+}
+
+img:hover{
+    transform: translate(10%, 50%) scale(1.5) rotate(-15deg);
+    background-color: black;
+    border-radius: 50%;
+}
+
+/*------------------------*/
+
+hr{
+    width: 100%;
+}

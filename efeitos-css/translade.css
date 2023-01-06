@@ -8,7 +8,7 @@ body{
     outline: 5px solid red;
 }
 
-img{
+.lua{
     width: 100px;
     height: 100px;
     transition-property: background-color, transform;
@@ -17,7 +17,7 @@ img{
  transition-timing-function: cubic-bezier(0.75, 0.82, 0.65, 1);
 }
 
-img:hover{
+.lua:hover{
     transform: translate(10%, 50%) scale(1.5) rotate(-15deg);
     background-color: black;
     border-radius: 50%;
@@ -27,4 +27,29 @@ img:hover{
 
 hr{
     width: 100%;
+}
+
+/*----Keyfremes-----*/
+
+.aviao{
+  animation: voa 1s;
+  background-color: white;
+  outline: 5px solid red;
+  margin-left: -100px;
+  position: relative;
+  
+}
+
+.imgaviao{
+  width: 100px;
+  height: 100px;
+  
+}
+
+@keyframes voa {
+  /*
+  pode ser de 0% a 100% ou from a to
+  
+  */
+  
 }

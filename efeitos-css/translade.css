@@ -33,7 +33,6 @@ hr{
 /*----Keyfremes-----*/
 
 .aviao{
-    //margin-top: -100px;
     /*
     animation-name: voa; 
     animation-duration: 1s; 
@@ -49,7 +48,7 @@ hr{
 
 
   background-color: white;
-  outline: 5px solid red;
+  /*outline: 5px solid red;*/
   margin-left: 0px;/*-400*/
   position: relative;
   display: block;
@@ -66,7 +65,7 @@ hr{
   
 }
 
-@keyframes voaa {
+@keyframes voa {
   /*
   pode ser de 0% a 100% ou from a to
   
@@ -83,7 +82,7 @@ hr{
 .dd{
     animation: gg 5s ease infinite;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d6d5, #23d5ab) no-repeat;
-    background-size: 300% 300%;
+    background-size: 30% 300%;
     font-family: sans-serif;
     display: flex;
     align-items: center;
@@ -105,4 +104,44 @@ hr{
  100%{
     background-position: 0 50%;
  }
+}
+
+h1{
+    font-size: 50pt;
+}
+
+/*svg*/
+
+svg{
+margin: auto;
+display: grid;
+place-items: center;
+animation: pula 1s ease-in-out alternate infinite;
+}
+
+@keyframes pula {
+    to{
+        transform: translateY(30px);
+    }   
+}
+
+.txt{
+    background: #23d5ab;
+    display: grid;
+    place-items: center;
+    height: 100px;
+    width: 500px;
+    animation: log 2s alternate infinite;
+}
+
+.david{
+    margin: 0px;
+    po
+    
+}
+
+@keyframes log {
+    to{
+        transform: translateX(100%);
+    }
 }

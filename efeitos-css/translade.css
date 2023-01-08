@@ -1,8 +1,9 @@
 body{
     display: grid;
-    place-items: center;
+    /*place-items: center;*/
     height: 100vh;
 }
+
 
 .box{
     outline: 5px solid red;
@@ -18,25 +19,45 @@ body{
 }
 
 .lua:hover{
-    transform: translate(10%, 50%) scale(1.5) rotate(-15deg);
+     transform: translate(10%, 50%) scale(1.5) rotate(-15deg);
     border-radius: 50%;
 }
-
 /*------------------------*/
 
 hr{
     width: 100%;
+    height: 10px;
+    margin: 0px;
 }
 
 /*----Keyfremes-----*/
 
 .aviao{
-  animation: voa 1s;
+    //margin-top: -100px;
+    /*
+    animation-name: voa; 
+    animation-duration: 1s; 
+    animation-timing-function: ease-in-out;/*suave no inicio e no fim*/
+    /*animation-delay: 500ms;/*tempo do inicio da animacao*/
+    /*animation-iteration-count: infinite;/*repetições ( pode ser quantidade de vezes ex: 5 6 8 2 1)*/
+    /*animation-direction: alternate-reverse;/*direção da animação*/
+    /*animation-fill-mode: backwards;/*determina o estado final e ou inicial*/
+    
+    animation: voa 2s ease-in-out 500ms infinite alternate-reverse;
+
+
+
+
   background-color: white;
   outline: 5px solid red;
-  margin-left: -400px;
+  margin-left: 0px;/*-400*/
   position: relative;
-  
+  display: block;
+}
+
+.aviao:hover {
+    animation-play-state: paused;/*subistituir o hover e escolher entre iniciar ou pausar a animação
+    */
 }
 
 .imgaviao{
@@ -45,10 +66,43 @@ hr{
   
 }
 
-@keyframes voa {
+@keyframes voaa {
   /*
   pode ser de 0% a 100% ou from a to
   
   */
-  
+
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(calc(100vw - 100px));
+  }
+}
+
+.dd{
+    animation: gg 5s ease infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d6d5, #23d5ab) no-repeat;
+    background-size: 300% 300%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 500px;
+    font-size: 300px;
+}
+
+@keyframes gg {
+ 0%{
+    background-position: 0 50%;
+ }
+ 
+ 50%{
+    background-position: 100% 50%;
+ }
+
+ 100%{
+    background-position: 0 50%;
+ }
 }

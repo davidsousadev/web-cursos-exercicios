@@ -19,7 +19,6 @@ body{
 
 .lua:hover{
     transform: translate(10%, 50%) scale(1.5) rotate(-15deg);
-    background-color: black;
     border-radius: 50%;
 }
 
@@ -35,7 +34,7 @@ hr{
   animation: voa 1s;
   background-color: white;
   outline: 5px solid red;
-  margin-left: -100px;
+  margin-left: -400px;
   position: relative;
   
 }

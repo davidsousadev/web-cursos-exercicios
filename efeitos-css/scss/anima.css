@@ -1,0 +1,45 @@
+body{
+  display: grid;
+  font-family: sans-serif;
+  font-size: 300%;
+  height: 100vw;
+  place-items: center;
+}
+
+.texto{
+  overflow: hidden;
+  position: relative;
+  
+  /*&::after {
+    animation: txt 1s cubic-belier(0.85, 0, 0.15, 1) forwards;
+    background-color: #157bad;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }*/
+}
+
+@keyframes txt{
+  from{
+    transform: transladeX(-101%);
+  }
+  
+  to{
+    transform: transladeX(101%);
+  }
+}
+
+h1{
+  animation: fim 1ms 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes fim{
+  to{
+    opacity: 1;
+  }
+}

@@ -65,7 +65,7 @@ hr{
   
 }
 
-@keyframes voa {
+@keyframes voaa {
   /*
   pode ser de 0% a 100% ou from a to
   
@@ -92,7 +92,7 @@ hr{
     font-size: 300px;
 }
 
-@keyframes gg {
+@keyframes ggg {
  0%{
     background-position: 0 50%;
  }
@@ -127,20 +127,27 @@ animation: pula 1s ease-in-out alternate infinite;
 
 .txt{
     background: #23d5ab;
+    margin-left: 500px;
     display: grid;
     place-items: center;
+    font-family: sans-serif;
     height: 100px;
     width: 500px;
-    animation: log 2s alternate infinite;
+    animation: log 2s ease forwards;
+overflow: hidden;
 }
 
 .david{
+
     margin: 0px;
-    po
+    
     
 }
 
 @keyframes log {
+    from{
+        transform: translateX(-100%);
+    }
     to{
         transform: translateX(100%);
     }

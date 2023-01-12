@@ -1,0 +1,1363 @@
+Tags HTML: 
+
+David Sousa da Silva
+Todas as tags html
+
+<html>: define um documento HTML
+<head>: contém informações sobre o documento, como o título da página
+<body>: contém o conteúdo visível da página
+<h1>-<h6>: define títulos e subtítulos
+<p>: define um parágrafo
+<a>: cria um link
+<img>: exibe uma imagem
+<div>: usado para agrupar elementos HTML e aplicar estilos CSS
+<span>: usado para agrupar elementos menores e aplicar estilos CSS
+<ul>: cria uma lista não ordenada
+<ol>: cria uma lista ordenada
+<li>: define um item de lista
+<form>: define um formulário para coletar dados do usuário
+<input>: define um campo de entrada para coletar dados do usuário
+<label>: define uma descrição para um campo de entrada
+<select>: define uma lista suspensa para selecionar um valor
+<option>: define uma opção em uma lista suspensa
+<textarea>: define uma área de texto para coletar dados do usuário
+<button>: define um botão
+<table>: define uma tabela
+<tr>: define uma linha de tabela
+<th>: define uma célula de cabeçalho de tabela
+<td>: define uma célula de dados de tabela
+
+<head>: contém informações sobre o documento, como o título da página
+<body>: contém o conteúdo visível da página
+<h1>-<h6>: define títulos e subtítulos
+<p>: define um parágrafo
+<a>: cria um link
+<img>: exibe uma imagem
+<div>: usado para agrupar elementos HTML e aplicar estilos CSS
+<span>: usado para agrupar elementos menores e aplicar estilos CSS
+<ul>: cria uma lista não ordenada
+<ol>: cria uma lista ordenada
+<li>: define um item de lista
+<form>: define um formulário para coletar dados do usuário
+<input>: define um campo de entrada para coletar dados do usuário
+<label>: define uma descrição para um campo de entrada
+<select>: define uma lista suspensa para selecionar um valor
+<option>: define uma opção em uma lista suspensa
+<textarea>: define uma área de texto para coletar dados do usuário
+<button>: define um botão
+<table>: define uma tabela
+<tr>: define uma linha de tabela
+<th>: define uma célula de cabeçalho de tabela
+<td>: define uma célula de dados de tabela
+
+
+<header>: define a seção de cabeçalho de uma página
+<nav>: define a seção de navegação de uma página
+<main>: define a seção principal de conteúdo de uma página
+<article>: define um artigo independente dentro do conteúdo principal
+<section>: define uma seção dentro do conteúdo principal
+<aside>: define um conteúdo adicional, como uma barra lateral
+<footer>: define a seção de rodapé de uma página
+<figure>: define uma imagem ou vídeo junto com sua legenda
+<figcaption>: define uma legenda para uma imagem ou vídeo
+<time>: define uma data ou hora
+<mark>: define um texto marcado
+<progress>: define um indicador de progresso
+<meter>: define uma medida numérica em um determinado intervalo
+<details>: define um elemento com detalhes adicionais que podem ser expandidos ou recolhidos
+<summary>: define o título ou resumo de um elemento "details"
+<template>: define um modelo de conteúdo que pode ser clonado e inserido múltiplas vezes
+<audio> : Define áudio para tocar
+<video> : define vídeo para tocar
+<source>: especifica diferentes formatos de arquivo para mídia
+<canvas>: define uma área para desenhar gráficos
+<svg>: define gráficos vetoriais
+
+<head>: contém informações sobre o documento, como o título da página
+<body>: contém o conteúdo visível da página
+<h1>-<h6>: define títulos e subtítulos
+<p>: define um parágrafo
+<a>: cria um link
+<img>: exibe uma imagem
+<div>: usado para agrupar elementos HTML e aplicar estilos CSS
+<span>: usado para agrupar elementos menores e aplicar estilos CSS
+<ul>: cria uma lista não ordenada
+<ol>: cria uma lista ordenada
+<li>: define um item de lista
+<form>: define um formulário para coletar dados do usuário
+<input>: define um campo de entrada para coletar dados do usuário
+<label>: define uma descrição para um campo de entrada
+<select>: define uma lista suspensa para selecionar um valor
+<option>: define uma opção em uma lista suspensa
+<textarea>: define uma área de texto para coletar dados do usuário
+<button>: define um botão
+<table>: define uma tabela
+<tr>: define uma linha de tabela
+<th>: define uma célula de cabeçalho de tabela
+<td>: define uma célula de dados de tabela
+Essa lista não é exaustiva, existem outras tags também, mas essas são as mais comuns.
+
+<header>: define a seção de cabeçalho de uma página
+<nav>: define a seção de navegação de uma página
+<main>: define a seção principal de conteúdo de uma página
+<article>: define um artigo independente dentro do conteúdo principal
+<section>: define uma seção dentro do conteúdo principal
+<aside>: define um conteúdo adicional, como uma barra lateral
+<footer>: define a seção de rodapé de uma página
+<figure>: define uma imagem ou vídeo junto com sua legenda
+<figcaption>: define uma legenda para uma imagem ou vídeo
+<time>: define uma data ou hora
+<mark>: define um texto marcado
+<progress>: define um indicador de progresso
+<meter>: define uma medida numérica em um determinado intervalo
+<details>: define um elemento com detalhes adicionais que podem ser expandidos ou recolhidos
+<summary>: define o título ou resumo de um elemento "details"
+<template>: define um modelo de conteúdo que pode ser clonado e inserido múltiplas vezes
+<audio> : Define áudio para tocar
+<video> : define vídeo para tocar
+<source>: especifica diferentes formatos de arquivo para mídia
+<canvas>: define uma área para desenhar gráficos
+<svg>: define gráficos vetoriais
+<math>: define conteúdo matemático
+
+<base>: define uma URL base para todos os links da página
+<command>: define um comando executável
+<keygen>: define uma chave pública de criptografia
+<output>: define o resultado de uma operação
+<ruby>: define anotações de áudio em texto japonês
+<rt>: define a anotação de áudio para o texto japonês
+<rp>: define o conteúdo de backup para o texto japonês anotação
+<wbr>: define um ponto de quebra de palavra sugerido
+<picture>: define uma imagem com várias fontes
+<datalist>: define uma lista de opções para um campo de entrada
+<optgroup>: define um grupo de opções em uma lista suspensa
+<fieldset>: define um conjunto de campos relacionados em um formulário
+<legend>: define uma descrição para um campo set
+<isindex>: legacy tag, definir um campo de entrada de busca
+<dir>:Legacy tag, definir uma lista de diretórios
+
+<html>: define um documento HTML
+<head>: contém informações sobre o documento, como o título da página
+<body>: contém o conteúdo visível da página
+<h1>-<h6>: define títulos e subtítulos
+<p>: define um parágrafo
+<a>: cria um link
+<img>: exibe uma imagem
+<div>: usado para agrupar elementos HTML e aplicar estilos CSS
+<span>: usado para agrupar elementos menores e aplicar estilos CSS
+<ul>: cria uma lista não ordenada
+<ol>: cria uma lista ordenada
+<li>: define um item de lista
+<form>: define um formulário para coletar dados do usuário
+<input>: define um campo de entrada para coletar dados do usuário
+<label>: define uma descrição para um campo de entrada
+<select>: define uma lista suspensa para selecionar um valor
+<option>: define uma opção em uma lista suspensa
+<textarea>: define uma área de texto para coletar dados do usuário
+<button>: define um botão
+<table>: define uma tabela
+<tr>: define uma linha de tabela
+<th>: define uma célula de cabeçalho de tabela
+<td>: define uma célula de dados de tabela
+
+<header>: define a seção de cabeçalho de uma página
+<nav>: define a seção de navegação de uma página
+<main>: define a seção principal de conteúdo de uma página
+<article>: define um artigo independente dentro do conteúdo principal
+<section>: define uma seção dentro do conteúdo principal
+<aside>: define um conteúdo adicional, como uma barra lateral
+<footer>: define a seção de rodapé de uma página
+<figure>: define uma imagem ou vídeo junto com sua legenda
+<figcaption>: define uma legenda para uma imagem ou vídeo
+<time>: define uma data ou hora
+<mark>: define um texto marcado
+<progress>: define um indicador de progresso
+<meter>: define uma medida numérica em um determinado intervalo
+<details>: define um elemento com detalhes adicionais que podem ser expandidos ou recolhidos
+<summary>: define o título ou resumo de um elemento "details"
+<template>: define um modelo de conteúdo que pode ser clonado e inserido múltiplas vezes
+<audio> : Define áudio para tocar
+<video> : define vídeo para tocar
+<source>: especifica diferentes formatos de arquivo para mídia
+<canvas>: define uma área para desenhar gráficos
+<svg>: define gráficos vetoriais
+<math>: define conteúdo matemático
+
+<base>: define uma URL base para todos os links da página
+<command>: define um comando executável
+<keygen>: define uma chave pública de criptografia
+<output>: define o resultado de uma operação
+<ruby>: define anotações de áudio em texto japonês
+<rt>: define a anotação de áudio para o texto japonês
+<rp>: define o conteúdo de backup para o texto japonês anotação
+<wbr>: define um ponto de quebra de palavra sugerido
+<picture>: define uma imagem com várias fontes
+<datalist>: define uma lista de opções para um campo de entrada
+<optgroup>: define um grupo de opções em uma lista suspensa
+<fieldset>: define um conjunto de campos relacionados em um formulário
+<legend>: define uma descrição para um campo set
+<isindex>: legacy tag, definir um campo de entrada de busca
+<dir>:Legacy tag, definir uma lista de diretórios
+
+<bdi>: isola o texto de direção de forma independente
+<bdo>: override a direção de texto
+<col>: define propriedades para uma coluna na tabela
+<colgroup>: define um grupo de colunas na tabela
+<data>: contém valores personalizados para elementos com o atributo "data-"
+<del>: define texto que foi deletado de um documento
+<ins>: define texto que foi adicionado a um documento
+<link>: define uma relação entre um documento e uma URL externa
+<map>: define um mapa de imagem
+<param>: define parâmetros para um objeto
+<sub>: define texto como subescrito
+<sup>: define texto como superescrito
+<time>: define uma data ou hora
+<var>: define uma variável matemática ou de programação
+<track>: define uma faixa de legenda ou subtítulo
+
+<html>: define um documento HTML
+<head>: contém informações sobre o documento, como o título da página
+<body>: contém o conteúdo visível da página
+<h1>-<h6>: define títulos e subtítulos
+<p>: define um parágrafo
+<a>: cria um link
+<img>: exibe uma imagem
+<div>: usado para agrupar elementos HTML e aplicar estilos CSS
+<span>: usado para agrupar elementos menores e aplicar estilos CSS
+<ul>: cria uma lista não ordenada
+<ol>: cria uma lista ordenada
+<li>: define um item de lista
+<form>: define um formulário para coletar dados do usuário
+<input>: define um campo de entrada para coletar dados do usuário
+<label>: define uma descrição para um campo de entrada
+<select>: define uma lista suspensa para selecionar um valor
+<option>: define uma opção em uma lista suspensa
+<textarea>: define uma área de texto para coletar dados do usuário
+<button>: define um botão
+<table>: define uma tabela
+<tr>: define uma linha de tabela
+<th>: define uma célula de cabeçalho de tabela
+<td>: define uma célula de dados de tabela
+
+<header>: define a seção de cabeçalho de uma página
+<nav>: define a seção de navegação de uma página
+<main>: define a seção principal de conteúdo de uma página
+<article>: define um artigo independente dentro do conteúdo principal
+<section>: define uma seção dentro do conteúdo principal
+<aside>: define um conteúdo adicional, como uma barra lateral
+<footer>: define a seção de rodapé de uma página
+<figure>: define uma imagem ou vídeo junto com sua legenda
+<figcaption>: define uma legenda para uma imagem ou vídeo
+<time>: define uma data ou hora
+<mark>: define um texto marcado
+<progress>: define um indicador de progresso
+<meter>: define uma medida numérica em um determinado intervalo
+<details>: define um elemento com detalhes adicionais que podem ser expandidos ou recolhidos
+<summary>: define o título ou resumo de um elemento "details"
+<template>: define um modelo de conteúdo que pode ser clonado e inserido múltiplas vezes
+<audio> : Define áudio para tocar
+<video> : define vídeo para tocar
+<source>: especifica diferentes formatos de arquivo para mídia
+<canvas>: define uma área para desenhar gráficos
+<svg>: define gráficos vetoriais
+<math>: define conteúdo matemático
+
+<base>: define uma URL base para todos os links da página
+<command>: define um comando executável
+<keygen>: define uma chave pública de criptografia
+<output>: define o resultado de uma operação
+<ruby>: define anotações de áudio em texto japonês
+<rt>: define a anotação de áudio para o texto japonês
+<rp>: define o conteúdo de backup para o texto japonês anotação
+<wbr>: define um ponto de quebra de palavra sugerido
+<picture>: define uma imagem com várias fontes
+<datalist>: define uma lista de opções para um campo de entrada
+<optgroup>: define um grupo de opções em uma lista suspensa
+<fieldset>: define um conjunto de campos relacionados em um formulário
+<legend>: define uma descrição para um campo set
+<isindex>: legacy tag, definir um campo de entrada de busca
+<dir>:Legacy tag, definir uma lista de diretórios
+
+<bdi>: isola o texto de direção de forma independente
+<bdo>: override a direção de texto
+<col>: define propriedades para uma coluna na tabela
+<colgroup>: define um grupo de colunas na tabela
+<data>: contém valores personalizados para elementos com o atributo "data-"
+<del>: define texto que foi deletado de um documento
+<ins>: define texto que foi adicionado a um documento
+<link>: define uma relação entre um documento e uma URL externa
+<map>: define um mapa de imagem
+<param>: define parâmetros para um objeto
+<sub>: define texto como subescrito
+<sup>: define texto como superescrito
+<time>: define uma data ou hora
+<var>: define uma variável matemática ou de programação
+<track>: define uma faixa de legenda ou subtítulo
+
+<abbr>: Define uma abreviação ou sigla
+<address>: Define informações de contato
+<cite>: Define um título de trabalho (como livro, música, poema)
+<code>: Define um bloco de código
+<dfn>: Define uma definição de termo
+<kbd>: Define o texto digitado pelo usuário
+<pre>: Define pré-formatado texto
+<q>: Define uma citação curta
+<samp>: Define amostra de saída de computador
+<small>: Define pequeno texto
+<strong>: Define texto importante
+<u>: Define texto sublinhado
+
+
+
+<html>: define um documento HTML
+<head>: contém informações sobre o documento, como o título da página
+<body>: contém o conteúdo visível da página
+<h1>-<h6>: define títulos e subtítulos
+<p>: define um parágrafo
+<a>: cria um link
+<img>: exibe uma imagem
+<div>: usado para agrupar elementos HTML e aplicar estilos CSS
+<span>: usado para agrupar elementos menores e aplicar estilos CSS
+<ul>: cria uma lista não ordenada
+<ol>: cria uma lista ordenada
+<li>: define um item de lista
+<form>: define um formulário para coletar dados do usuário
+<input>: define um campo de entrada para coletar dados do usuário
+<label>: define uma descrição para um campo de entrada
+<select>: define uma lista suspensa para selecionar um valor
+<option>: define uma opção em uma lista suspensa
+<textarea>: define uma área de texto para coletar dados do usuário
+<button>: define um botão
+<table>: define uma tabela
+<tr>: define uma linha de tabela
+<th>: define uma célula de cabeçalho de tabela
+<td>: define uma célula de dados de tabela
+
+<header>: define a seção de cabeçalho de uma página
+<nav>: define a seção de navegação de uma página
+<main>: define a seção principal de conteúdo de uma página
+<article>: define um artigo independente dentro do conteúdo principal
+<section>: define uma seção dentro do conteúdo principal
+<aside>: define um conteúdo adicional, como uma barra lateral
+<footer>: define a seção de rodapé de uma página
+<figure>: define uma imagem ou vídeo junto com sua legenda
+<figcaption>: define uma legenda para uma imagem ou vídeo
+<time>: define uma data ou hora
+<mark>: define um texto marcado
+<progress>: define um indicador de progresso
+<meter>: define uma medida numérica em um determinado intervalo
+<details>: define um elemento com detalhes adicionais que podem ser expandidos ou recolhidos
+<summary>: define o título ou resumo de um elemento "details"
+<template>: define um modelo de conteúdo que pode ser clonado e inserido múltiplas vezes
+<audio> : Define áudio para tocar
+<video> : define vídeo para tocar
+<source>: especifica diferentes formatos de arquivo para mídia
+<canvas>: define uma área para desenhar gráficos
+<svg>: define gráficos vetoriais
+<math>: define conteúdo matemático
+
+<base>: define uma URL base para todos os links da página
+<command>: define um comando executável
+<keygen>: define uma chave pública de criptografia
+<output>: define o resultado de uma operação
+<ruby>: define anotações de áudio em texto japonês
+<rt>: define a anotação de áudio para o texto japonês
+<rp>: define o conteúdo de backup para o texto japonês anotação
+<wbr>: define um ponto de quebra de palavra sugerido
+<picture>: define uma imagem com várias fontes
+<datalist>: define uma lista de opções para um campo de entrada
+<optgroup>: define um grupo de opções em uma lista suspensa
+<fieldset>: define um conjunto de campos relacionados em um formulário
+<legend>: define uma descrição para um campo set
+<isindex>: legacy tag, definir um campo de entrada de busca
+<dir>:Legacy tag, definir uma lista de diretórios
+
+
+<bdi>: isola o texto de direção de forma independente
+<bdo>: override a direção de texto
+<col>: define propriedades para uma coluna na tabela
+<colgroup>: define um grupo de colunas na tabela
+<data>: contém valores personalizados para elementos com o atributo "data-"
+<del>: define texto que foi deletado de um documento
+<ins>: define texto que foi adicionado a um documento
+<link>: define uma relação entre um documento e uma URL externa
+<map>: define um mapa de imagem
+<param>: define parâmetros para um objeto
+<sub>: define texto como subescrito
+<sup>: define texto como superescrito
+<time>: define uma data ou hora
+<var>: define uma variável matemática ou de programação
+<track>: define uma faixa de legenda ou subtítulo
+
+<abbr>: Define uma abreviação ou sigla
+<address>: Define informações de contato
+<cite>: Define um título de trabalho (como livro, música, poema)
+<code>: Define um bloco de código
+<dfn>: Define uma definição de termo
+<kbd>: Define o texto digitado pelo usuário
+<pre>: Define pré-formatado texto
+<q>: Define uma citação curta
+<samp>: Define amostra de saída de computador
+<small>: Define pequeno texto
+<strong>: Define texto importante
+<u>: Define texto sublinhado
+
+<blockquote>: Define uma citação longa
+<figure>: Define uma figura com um caption
+<figcaption>: Define um caption para um elemento <figure>
+<hr>: Define uma regra horizontal
+<menuitem>: Define um comando de menu
+<menu>: Define uma lista de comandos
+<style>: Define um bloco de estilo
+<template>: Define um modelo de conteúdo
+<tfoot>: Define uma seção de rodapé de tabela
+<b>: Define negrito
+<i>: Define texto itálico
+<li>: Define um item de lista
+<ol>: Define uma lista ordenada
+<ul>: Define uma lista não ordenada
+<a>: Define um hiperlink
+<link>: Define uma ligação para uma folha de estilo
+<picture>: Define uma imagem com várias fontes
+<br>: Define uma quebra de linha
+
+
+
+<html>: define um documento HTML
+<head>: contém informações sobre o documento, como o título da página
+<body>: contém o conteúdo visível da página
+<h1>-<h6>: define títulos e subtítulos
+<p>: define um parágrafo
+<a>: cria um link
+<img>: exibe uma imagem
+<div>: usado para agrupar elementos HTML e aplicar estilos CSS
+<span>: usado para agrupar elementos menores e aplicar estilos CSS
+<ul>: cria uma lista não ordenada
+<ol>: cria uma lista ordenada
+<li>: define um item de lista
+<form>: define um formulário para coletar dados do usuário
+<input>: define um campo de entrada para coletar dados do usuário
+<label>: define uma descrição para um campo de entrada
+<select>: define uma lista suspensa para selecionar um valor
+<option>: define uma opção em uma lista suspensa
+<textarea>: define uma área de texto para coletar dados do usuário
+<button>: define um botão
+<table>: define uma tabela
+<tr>: define uma linha de tabela
+<th>: define uma célula de cabeçalho de tabela
+<td>: define uma célula de dados de tabela
+
+
+<header>: define a seção de cabeçalho de uma página
+<nav>: define a seção de navegação de uma página
+<main>: define a seção principal de conteúdo de uma página
+<article>: define um artigo independente dentro do conteúdo principal
+<section>: define uma seção dentro do conteúdo principal
+<aside>: define um conteúdo adicional, como uma barra lateral
+<footer>: define a seção de rodapé de uma página
+<figure>: define uma imagem ou vídeo junto com sua legenda
+<figcaption>: define uma legenda para uma imagem ou vídeo
+<time>: define uma data ou hora
+<mark>: define um texto marcado
+<progress>: define um indicador de progresso
+<meter>: define uma medida numérica em um determinado intervalo
+<details>: define um elemento com detalhes adicionais que podem ser expandidos ou recolhidos
+<summary>: define o título ou resumo de um elemento "details"
+<template>: define um modelo de conteúdo que pode ser clonado e inserido múltiplas vezes
+<audio> : Define áudio para tocar
+<video> : define vídeo para tocar
+<source>: especifica diferentes formatos de arquivo para mídia
+<canvas>: define uma área para desenhar gráficos
+<svg>: define gráficos vetoriais
+<math>: define conteúdo matemático
+
+<base>: define uma URL base para todos os links da página
+<command>: define um comando executável
+<keygen>: define uma chave pública de criptografia
+<output>: define o resultado de uma operação
+<ruby>: define anotações de áudio em texto japonês
+<rt>: define a anotação de áudio para o texto japonês
+<rp>: define o conteúdo de backup para o texto japonês anotação
+<wbr>: define um ponto de quebra de palavra sugerido
+<picture>: define uma imagem com várias fontes
+<datalist>: define uma lista de opções para um campo de entrada
+<optgroup>: define um grupo de opções em uma lista suspensa
+<fieldset>: define um conjunto de campos relacionados em um formulário
+<legend>: define uma descrição para um campo set
+<isindex>: legacy tag, definir um campo de entrada de busca
+<dir>:Legacy tag, definir uma lista de diretórios
+
+<bdi>: isola o texto de direção de forma independente
+<bdo>: override a direção de texto
+<col>: define propriedades para uma coluna na tabela
+<colgroup>: define um grupo de colunas na tabela
+<data>: contém valores personalizados para elementos com o atributo "data-"
+<del>: define texto que foi deletado de um documento
+<ins>: define texto que foi adicionado a um documento
+<link>: define uma relação entre um documento e uma URL externa
+<map>: define um mapa de imagem
+<param>: define parâmetros para um objeto
+<sub>: define texto como subescrito
+<sup>: define texto como superescrito
+<time>: define uma data ou hora
+<var>: define uma variável matemática ou de programação
+<track>: define uma faixa de legenda ou subtítulo
+
+<abbr>: Define uma abreviação ou sigla
+<address>: Define informações de contato
+<cite>: Define um título de trabalho (como livro, música, poema)
+<code>: Define um bloco de código
+<dfn>: Define uma definição de termo
+<kbd>: Define o texto digitado pelo usuário
+<pre>: Define pré-formatado texto
+<q>: Define uma citação curta
+<samp>: Define amostra de saída de computador
+<small>: Define pequeno texto
+<strong>: Define texto importante
+<u>: Define texto sublinhado
+
+<blockquote>: Define uma citação longa
+<figure>: Define uma figura com um caption
+<figcaption>: Define um caption para um elemento <figure>
+<hr>: Define uma regra horizontal
+<menuitem>: Define um comando de menu
+<menu>: Define uma lista de comandos
+<style>: Define um bloco de estilo
+<template>: Define um modelo de conteúdo
+<tfoot>: Define uma seção de rodapé de tabela
+<b>: Define negrito
+<i>: Define texto itálico
+<li>: Define um item de lista
+<ol>: Define uma lista ordenada
+<ul>: Define uma lista não ordenada
+<a>: Define um hiperlink
+<link>: Define uma ligação para uma folha de estilo
+<picture>: Define uma imagem com várias fontes
+<br>: Define uma quebra de linha
+
+
+<caption>: Define uma legenda para uma tabela
+<thead>: Define a seção de cabeçalho de uma tabela
+<tbody>: Define a seção de corpo de uma tabela
+<td>: Define uma célula de dados em uma tabela
+<th>: Define uma célula de cabeçalho em uma tabela
+<tr>: Define uma linha em uma tabela
+<body>: Define o corpo de um documento
+<head>: Define a seção de cabeçalho de um documento
+<html>: Define um documento HTML
+<meta>: Define metadados sobre um documento
+<title>: Define o título de um documento
+<button>: Define um botão
+<datalist>: Define uma lista de opções para um campo de entrada
+<fieldset>: Define um conjunto de campos relacionados em um formulário
+<form>: Define um formulário
+<input>: Define um campo de entrada
+<label>: Define uma descrição para um campo de entrada
+<legend>: Define uma descrição para um fieldset
+<select>: Define uma lista suspensa
+<textarea>: Define uma área de texto
+
+
+
+<html>: define um documento HTML
+<head>: contém informações sobre o documento, como o título da página
+<body>: contém o conteúdo visível da página
+<h1>-<h6>: define títulos e subtítulos
+<p>: define um parágrafo
+<a>: cria um link
+<img>: exibe uma imagem
+<div>: usado para agrupar elementos HTML e aplicar estilos CSS
+<span>: usado para agrupar elementos menores e aplicar estilos CSS
+<ul>: cria uma lista não ordenada
+<ol>: cria uma lista ordenada
+<li>: define um item de lista
+<form>: define um formulário para coletar dados do usuário
+<input>: define um campo de entrada para coletar dados do usuário
+<label>: define uma descrição para um campo de entrada
+<select>: define uma lista suspensa para selecionar um valor
+<option>: define uma opção em uma lista suspensa
+<textarea>: define uma área de texto para coletar dados do usuário
+<button>: define um botão
+<table>: define uma tabela
+<tr>: define uma linha de tabela
+<th>: define uma célula de cabeçalho de tabela
+<td>: define uma célula de dados de tabela
+
+
+<header>: define a seção de cabeçalho de uma página
+<nav>: define a seção de navegação de uma página
+<main>: define a seção principal de conteúdo de uma página
+<article>: define um artigo independente dentro do conteúdo principal
+<section>: define uma seção dentro do conteúdo principal
+<aside>: define um conteúdo adicional, como uma barra lateral
+<footer>: define a seção de rodapé de uma página
+<figure>: define uma imagem ou vídeo junto com sua legenda
+<figcaption>: define uma legenda para uma imagem ou vídeo
+<time>: define uma data ou hora
+<mark>: define um texto marcado
+<progress>: define um indicador de progresso
+<meter>: define uma medida numérica em um determinado intervalo
+<details>: define um elemento com detalhes adicionais que podem ser expandidos ou recolhidos
+<summary>: define o título ou resumo de um elemento "details"
+<template>: define um modelo de conteúdo que pode ser clonado e inserido múltiplas vezes
+<audio> : Define áudio para tocar
+<video> : define vídeo para tocar
+<source>: especifica diferentes formatos de arquivo para mídia
+<canvas>: define uma área para desenhar gráficos
+<svg>: define gráficos vetoriais
+<math>: define conteúdo matemático
+
+
+<base>: define uma URL base para todos os links da página
+<command>: define um comando executável
+<keygen>: define uma chave pública de criptografia
+<output>: define o resultado de uma operação
+<ruby>: define anotações de áudio em texto japonês
+<rt>: define a anotação de áudio para o texto japonês
+<rp>: define o conteúdo de backup para o texto japonês anotação
+<wbr>: define um ponto de quebra de palavra sugerido
+<picture>: define uma imagem com várias fontes
+<datalist>: define uma lista de opções para um campo de entrada
+<optgroup>: define um grupo de opções em uma lista suspensa
+<fieldset>: define um conjunto de campos relacionados em um formulário
+<legend>: define uma descrição para um campo set
+<isindex>: legacy tag, definir um campo de entrada de busca
+<dir>:Legacy tag, definir uma lista de diretórios
+
+
+<bdi>: isola o texto de direção de forma independente
+<bdo>: override a direção de texto
+<col>: define propriedades para uma coluna na tabela
+<colgroup>: define um grupo de colunas na tabela
+<data>: contém valores personalizados para elementos com o atributo "data-"
+<del>: define texto que foi deletado de um documento
+<ins>: define texto que foi adicionado a um documento
+<link>: define uma relação entre um documento e uma URL externa
+<map>: define um mapa de imagem
+<param>: define parâmetros para um objeto
+<sub>: define texto como subescrito
+<sup>: define texto como superescrito
+<time>: define uma data ou hora
+<var>: define uma variável matemática ou de programação
+<track>: define uma faixa de legenda ou subtítulo
+
+
+<abbr>: Define uma abreviação ou sigla
+<address>: Define informações de contato
+<cite>: Define um título de trabalho (como livro, música, poema)
+<code>: Define um bloco de código
+<dfn>: Define uma definição de termo
+<kbd>: Define o texto digitado pelo usuário
+<pre>: Define pré-formatado texto
+<q>: Define uma citação curta
+<samp>: Define amostra de saída de computador
+<small>: Define pequeno texto
+<strong>: Define texto importante
+<u>: Define texto sublinhado
+
+
+<blockquote>: Define uma citação longa
+<figure>: Define uma figura com um caption
+<figcaption>: Define um caption para um elemento <figure>
+<hr>: Define uma regra horizontal
+<menuitem>: Define um comando de menu
+<menu>: Define uma lista de comandos
+<style>: Define um bloco de estilo
+<template>: Define um modelo de conteúdo
+<tfoot>: Define uma seção de rodapé de tabela
+<b>: Define negrito
+<i>: Define texto itálico
+<li>: Define um item de lista
+<ol>: Define uma lista ordenada
+<ul>: Define uma lista não ordenada
+<a>: Define um hiperlink
+<link>: Define uma ligação para uma folha de estilo
+<picture>: Define uma imagem com várias fontes
+<br>: Define uma quebra de linha
+
+<caption>: Define uma legenda para uma tabela
+<thead>: Define a seção de cabeçalho de uma tabela
+<tbody>: Define a seção de corpo de uma tabela
+<td>: Define uma célula de dados em uma tabela
+<th>: Define uma célula de cabeçalho em uma tabela
+<tr>: Define uma linha em uma tabela
+<body>: Define o corpo de um documento
+<head>: Define a seção de cabeçalho de um documento
+<html>: Define um documento HTML
+<meta>: Define metadados sobre um documento
+<title>: Define o título de um documento
+<button>: Define um botão
+<datalist>: Define uma lista de opções para um campo de entrada
+<fieldset>: Define um conjunto de campos relacionados em um formulário
+<form>: Define um formulário
+<input>: Define um campo de entrada
+<label>: Define uma descrição para um campo de entrada
+<legend>: Define uma descrição para um fieldset
+<select>: Define uma lista suspensa
+<textarea>: Define uma área de texto
+
+<dialog>: Define uma caixa de diálogo
+<div>: Define uma divisão
+<span>: Define uma pequena seção de um documento
+<h1> to <h6> : Define seções de título
+<p>: Define um parágrafo
+<em> : Define o texto emfatizado
+<strong>: Define o texto importante
+<br>: Define uma quebra de linha
+<hr>: Define uma regra horizontal
+<small> : Define texto pequeno
+<mark> : Define o texto marcado
+<time> : Define uma data ou hora
+<bdo>: Override a direção do texto
+<bdi>: Isolamento de texto direcional
+<figure>: Define uma figura
+<figcaption>: Define a legenda de uma figura
+<img>: Define uma imagem
+<picture>: Define uma imagem com várias fontes
+<video> : Define vídeo
+<audio> : Define áudio
+<source> : Especifica diferentes formatos de arquivo para mídia
+
+
+
+<html>: define um documento HTML
+<head>: contém informações sobre o documento, como o título da página
+<body>: contém o conteúdo visível da página
+<h1>-<h6>: define títulos e subtítulos
+<p>: define um parágrafo
+<a>: cria um link
+<img>: exibe uma imagem
+<div>: usado para agrupar elementos HTML e aplicar estilos CSS
+<span>: usado para agrupar elementos menores e aplicar estilos CSS
+<ul>: cria uma lista não ordenada
+<ol>: cria uma lista ordenada
+<li>: define um item de lista
+<form>: define um formulário para coletar dados do usuário
+<input>: define um campo de entrada para coletar dados do usuário
+<label>: define uma descrição para um campo de entrada
+<select>: define uma lista suspensa para selecionar um valor
+<option>: define uma opção em uma lista suspensa
+<textarea>: define uma área de texto para coletar dados do usuário
+<button>: define um botão
+<table>: define uma tabela
+<tr>: define uma linha de tabela
+<th>: define uma célula de cabeçalho de tabela
+<td>: define uma célula de dados de tabela
+
+<header>: define a seção de cabeçalho de uma página
+<nav>: define a seção de navegação de uma página
+<main>: define a seção principal de conteúdo de uma página
+<article>: define um artigo independente dentro do conteúdo principal
+<section>: define uma seção dentro do conteúdo principal
+<aside>: define um conteúdo adicional, como uma barra lateral
+<footer>: define a seção de rodapé de uma página
+<figure>: define uma imagem ou vídeo junto com sua legenda
+<figcaption>: define uma legenda para uma imagem ou vídeo
+<time>: define uma data ou hora
+<mark>: define um texto marcado
+<progress>: define um indicador de progresso
+<meter>: define uma medida numérica em um determinado intervalo
+<details>: define um elemento com detalhes adicionais que podem ser expandidos ou recolhidos
+<summary>: define o título ou resumo de um elemento "details"
+<template>: define um modelo de conteúdo que pode ser clonado e inserido múltiplas vezes
+<audio> : Define áudio para tocar
+<video> : define vídeo para tocar
+<source>: especifica diferentes formatos de arquivo para mídia
+<canvas>: define uma área para desenhar gráficos
+<svg>: define gráficos vetoriais
+<math>: define conteúdo matemático
+
+
+<base>: define uma URL base para todos os links da página
+<command>: define um comando executável
+<keygen>: define uma chave pública de criptografia
+<output>: define o resultado de uma operação
+<ruby>: define anotações de áudio em texto japonês
+<rt>: define a anotação de áudio para o texto japonês
+<rp>: define o conteúdo de backup para o texto japonês anotação
+<wbr>: define um ponto de quebra de palavra sugerido
+<picture>: define uma imagem com várias fontes
+<datalist>: define uma lista de opções para um campo de entrada
+<optgroup>: define um grupo de opções em uma lista suspensa
+<fieldset>: define um conjunto de campos relacionados em um formulário
+<legend>: define uma descrição para um campo set
+<isindex>: legacy tag, definir um campo de entrada de busca
+<dir>:Legacy tag, definir uma lista de diretórios
+
+<bdi>: isola o texto de direção de forma independente
+<bdo>: override a direção de texto
+<col>: define propriedades para uma coluna na tabela
+<colgroup>: define um grupo de colunas na tabela
+<data>: contém valores personalizados para elementos com o atributo "data-"
+<del>: define texto que foi deletado de um documento
+<ins>: define texto que foi adicionado a um documento
+<link>: define uma relação entre um documento e uma URL externa
+<map>: define um mapa de imagem
+<param>: define parâmetros para um objeto
+<sub>: define texto como subescrito
+<sup>: define texto como superescrito
+<time>: define uma data ou hora
+<var>: define uma variável matemática ou de programação
+<track>: define uma faixa de legenda ou subtítulo
+
+
+<abbr>: Define uma abreviação ou sigla
+<address>: Define informações de contato
+<cite>: Define um título de trabalho (como livro, música, poema)
+<code>: Define um bloco de código
+<dfn>: Define uma definição de termo
+<kbd>: Define o texto digitado pelo usuário
+<pre>: Define pré-formatado texto
+<q>: Define uma citação curta
+<samp>: Define amostra de saída de computador
+<small>: Define pequeno texto
+<strong>: Define texto importante
+<u>: Define texto sublinhado
+
+<blockquote>: Define uma citação longa
+<figure>: Define uma figura com um caption
+<figcaption>: Define um caption para um elemento <figure>
+<hr>: Define uma regra horizontal
+<menuitem>: Define um comando de menu
+<menu>: Define uma lista de comandos
+<style>: Define um bloco de estilo
+<template>: Define um modelo de conteúdo
+<tfoot>: Define uma seção de rodapé de tabela
+<b>: Define negrito
+<i>: Define texto itálico
+<li>: Define um item de lista
+<ol>: Define uma lista ordenada
+<ul>: Define uma lista não ordenada
+<a>: Define um hiperlink
+<link>: Define uma ligação para uma folha de estilo
+<picture>: Define uma imagem com várias fontes
+<br>: Define uma quebra de linha
+
+<caption>: Define uma legenda para uma tabela
+<thead>: Define a seção de cabeçalho de uma tabela
+<tbody>: Define a seção de corpo de uma tabela
+<td>: Define uma célula de dados em uma tabela
+<th>: Define uma célula de cabeçalho em uma tabela
+<tr>: Define uma linha em uma tabela
+<body>: Define o corpo de um documento
+<head>: Define a seção de cabeçalho de um documento
+<html>: Define um documento HTML
+<meta>: Define metadados sobre um documento
+<title>: Define o título de um documento
+<button>: Define um botão
+<datalist>: Define uma lista de opções para um campo de entrada
+<fieldset>: Define um conjunto de campos relacionados em um formulário
+<form>: Define um formulário
+<input>: Define um campo de entrada
+<label>: Define uma descrição para um campo de entrada
+<legend>: Define uma descrição para um fieldset
+<select>: Define uma lista suspensa
+<textarea>: Define uma área de texto
+
+<dialog>: Define uma caixa de diálogo
+<div>: Define uma divisão
+<span>: Define uma pequena seção de um documento
+<h1> to <h6> : Define seções de título
+<p>: Define um parágrafo
+<em> : Define o texto emfatizado
+<strong>: Define o texto importante
+<br>: Define uma quebra de linha
+<hr>: Define uma regra horizontal
+<small> : Define texto pequeno
+<mark> : Define o texto marcado
+<time> : Define uma data ou hora
+<bdo>: Override a direção do texto
+<bdi>: Isolamento de texto direcional
+<figure>: Define uma figura
+<figcaption>: Define a legenda de uma figura
+<img>: Define uma imagem
+<picture>: Define uma imagem com várias fontes
+<video> : Define vídeo
+<audio> : Define áudio
+<source> : Especifica diferentes formatos de arquivo para mídia
+
+<summary>: Define um resumo de um elemento de detalhes
+<details>: Define uma seção de detalhes
+<article>: Define um conteúdo autônomo como uma notícia, postagem de blog, entrevista, etc.
+<aside>: Define um conteúdo relacionado ao conteúdo principal
+<header>: Define uma seção de cabeçalho
+<nav>: Define uma seção de navegação
+<footer>: Define uma seção de rodapé
+<section>: Define uma seção genérica
+<progress>: Define o progresso de uma tarefa
+<output>: Define o resultado de uma operação
+<canvas>: Define um espaço para desenhar gráficos via script
+<svg>: Define uma imagem vetorial baseado em xml
+<picture>: Define uma imagem com várias fontes
+<audio> : Define um arquivo de áudio
+<video> : Define um arquivo de vídeo
+<link>: Define uma ligação para uma folha de estilo
+<source> : Especifica diferentes formatos de arquivo para mídia
+<template>: Define um modelo de conteúdo
+
+
+<html>: define um documento HTML
+<head>: contém informações sobre o documento, como o título da página
+<body>: contém o conteúdo visível da página
+<h1>-<h6>: define títulos e subtítulos
+<p>: define um parágrafo
+<a>: cria um link
+<img>: exibe uma imagem
+<div>: usado para agrupar elementos HTML e aplicar estilos CSS
+<span>: usado para agrupar elementos menores e aplicar estilos CSS
+<ul>: cria uma lista não ordenada
+<ol>: cria uma lista ordenada
+<li>: define um item de lista
+<form>: define um formulário para coletar dados do usuário
+<input>: define um campo de entrada para coletar dados do usuário
+<label>: define uma descrição para um campo de entrada
+<select>: define uma lista suspensa para selecionar um valor
+<option>: define uma opção em uma lista suspensa
+<textarea>: define uma área de texto para coletar dados do usuário
+<button>: define um botão
+<table>: define uma tabela
+<tr>: define uma linha de tabela
+<th>: define uma célula de cabeçalho de tabela
+<td>: define uma célula de dados de tabela
+
+<header>: define a seção de cabeçalho de uma página
+<nav>: define a seção de navegação de uma página
+<main>: define a seção principal de conteúdo de uma página
+<article>: define um artigo independente dentro do conteúdo principal
+<section>: define uma seção dentro do conteúdo principal
+<aside>: define um conteúdo adicional, como uma barra lateral
+<footer>: define a seção de rodapé de uma página
+<figure>: define uma imagem ou vídeo junto com sua legenda
+<figcaption>: define uma legenda para uma imagem ou vídeo
+<time>: define uma data ou hora
+<mark>: define um texto marcado
+<progress>: define um indicador de progresso
+<meter>: define uma medida numérica em um determinado intervalo
+<details>: define um elemento com detalhes adicionais que podem ser expandidos ou recolhidos
+<summary>: define o título ou resumo de um elemento "details"
+<template>: define um modelo de conteúdo que pode ser clonado e inserido múltiplas vezes
+<audio> : Define áudio para tocar
+<video> : define vídeo para tocar
+<source>: especifica diferentes formatos de arquivo para mídia
+<canvas>: define uma área para desenhar gráficos
+<svg>: define gráficos vetoriais
+<math>: define conteúdo matemático
+
+<base>: define uma URL base para todos os links da página
+<command>: define um comando executável
+<keygen>: define uma chave pública de criptografia
+<output>: define o resultado de uma operação
+<ruby>: define anotações de áudio em texto japonês
+<rt>: define a anotação de áudio para o texto japonês
+<rp>: define o conteúdo de backup para o texto japonês anotação
+<wbr>: define um ponto de quebra de palavra sugerido
+<picture>: define uma imagem com várias fontes
+<datalist>: define uma lista de opções para um campo de entrada
+<optgroup>: define um grupo de opções em uma lista suspensa
+<fieldset>: define um conjunto de campos relacionados em um formulário
+<legend>: define uma descrição para um campo set
+<isindex>: legacy tag, definir um campo de entrada de busca
+<dir>:Legacy tag, definir uma lista de diretórios
+
+<bdi>: isola o texto de direção de forma independente
+<bdo>: override a direção de texto
+<col>: define propriedades para uma coluna na tabela
+<colgroup>: define um grupo de colunas na tabela
+<data>: contém valores personalizados para elementos com o atributo "data-"
+<del>: define texto que foi deletado de um documento
+<ins>: define texto que foi adicionado a um documento
+<link>: define uma relação entre um documento e uma URL externa
+<map>: define um mapa de imagem
+<param>: define parâmetros para um objeto
+<sub>: define texto como subescrito
+<sup>: define texto como superescrito
+<time>: define uma data ou hora
+<var>: define uma variável matemática ou de programação
+<track>: define uma faixa de legenda ou subtítulo
+
+<abbr>: Define uma abreviação ou sigla
+<address>: Define informações de contato
+<cite>: Define um título de trabalho (como livro, música, poema)
+<code>: Define um bloco de código
+<dfn>: Define uma definição de termo
+<kbd>: Define o texto digitado pelo usuário
+<pre>: Define pré-formatado texto
+<q>: Define uma citação curta
+<samp>: Define amostra de saída de computador
+<small>: Define pequeno texto
+<strong>: Define texto importante
+<u>: Define texto sublinhado
+
+<blockquote>: Define uma citação longa
+<figure>: Define uma figura com um caption
+<figcaption>: Define um caption para um elemento <figure>
+<hr>: Define uma regra horizontal
+<menuitem>: Define um comando de menu
+<menu>: Define uma lista de comandos
+<style>: Define um bloco de estilo
+<template>: Define um modelo de conteúdo
+<tfoot>: Define uma seção de rodapé de tabela
+<b>: Define negrito
+<i>: Define texto itálico
+<li>: Define um item de lista
+<ol>: Define uma lista ordenada
+<ul>: Define uma lista não ordenada
+<a>: Define um hiperlink
+<link>: Define uma ligação para uma folha de estilo
+<picture>: Define uma imagem com várias fontes
+<br>: Define uma quebra de linha
+
+<caption>: Define uma legenda para uma tabela
+<thead>: Define a seção de cabeçalho de uma tabela
+<tbody>: Define a seção de corpo de uma tabela
+<td>: Define uma célula de dados em uma tabela
+<th>: Define uma célula de cabeçalho em uma tabela
+<tr>: Define uma linha em uma tabela
+<body>: Define o corpo de um documento
+<head>: Define a seção de cabeçalho de um documento
+<html>: Define um documento HTML
+<meta>: Define metadados sobre um documento
+<title>: Define o título de um documento
+<button>: Define um botão
+<datalist>: Define uma lista de opções para um campo de entrada
+<fieldset>: Define um conjunto de campos relacionados em um formulário
+<form>: Define um formulário
+<input>: Define um campo de entrada
+<label>: Define uma descrição para um campo de entrada
+<legend>: Define uma descrição para um fieldset
+<select>: Define uma lista suspensa
+<textarea>: Define uma área de texto
+
+<dialog>: Define uma caixa de diálogo
+<div>: Define uma divisão
+<span>: Define uma pequena seção de um documento
+<h1> to <h6> : Define seções de título
+<p>: Define um parágrafo
+<em> : Define o texto emfatizado
+<strong>: Define o texto importante
+<br>: Define uma quebra de linha
+<hr>: Define uma regra horizontal
+<small> : Define texto pequeno
+<mark> : Define o texto marcado
+<time> : Define uma data ou hora
+<bdo>: Override a direção do texto
+<bdi>: Isolamento de texto direcional
+<figure>: Define uma figura
+<figcaption>: Define a legenda de uma figura
+<img>: Define uma imagem
+<picture>: Define uma imagem com várias fontes
+<video> : Define vídeo
+<audio> : Define áudio
+<source> : Especifica diferentes formatos de arquivo para mídia
+
+<summary>: Define um resumo de um elemento de detalhes
+<details>: Define uma seção de detalhes
+<article>: Define um conteúdo autônomo como uma notícia, postagem de blog, entrevista, etc.
+<aside>: Define um conteúdo relacionado ao conteúdo principal
+<header>: Define uma seção de cabeçalho
+<nav>: Define uma seção de navegação
+<footer>: Define uma seção de rodapé
+<section>: Define uma seção genérica
+<progress>: Define o progresso de uma tarefa
+<output>: Define o resultado de uma operação
+<canvas>: Define um espaço para desenhar gráficos via script
+<svg>: Define uma imagem vetorial baseado em xml
+<picture>: Define uma imagem com várias fontes
+<audio> : Define um arquivo de áudio
+<video> : Define um arquivo de vídeo
+<link>: Define uma ligação para uma folha de estilo
+<source> : Especifica diferentes formatos de arquivo para mídia
+<template>: Define um modelo de conteúdo
+
+<figure>: Define um conteúdo autônomo, geralmente com uma imagem, com uma legenda opcional
+<figcaption>: Define uma legenda para uma figura
+<audio>: Define um arquivo de áudio
+<video>: Define um arquivo de vídeo
+<source>: Especifica diferentes formatos de arquivo para mídia
+<track>: Define uma faixa de legenda ou subtítulo para áudio e vídeo
+<map>: Define um mapa de imagem
+<area>: Define uma área ativa para mapas de imagem
+<meta>: Define metadados para o documento
+<script>: Define um script de programação
+<style>: Define uma seção de estilo para o documento
+<noscript>: Define um conteúdo alternativo para navegadores que não suportam scripts
+<link>: Define uma ligação para uma folha de estilo
+<base>: Define uma URL base para todos os links do documento
+<template>: Define um modelo de conteúdo
+<datagrid>: Define uma tabela de dados
+<command>: Define um comando
+
+<html>: define um documento HTML
+<head>: contém informações sobre o documento, como o título da página
+<body>: contém o conteúdo visível da página
+<h1>-<h6>: define títulos e subtítulos
+<p>: define um parágrafo
+<a>: cria um link
+<img>: exibe uma imagem
+<div>: usado para agrupar elementos HTML e aplicar estilos CSS
+<span>: usado para agrupar elementos menores e aplicar estilos CSS
+<ul>: cria uma lista não ordenada
+<ol>: cria uma lista ordenada
+<li>: define um item de lista
+<form>: define um formulário para coletar dados do usuário
+<input>: define um campo de entrada para coletar dados do usuário
+<label>: define uma descrição para um campo de entrada
+<select>: define uma lista suspensa para selecionar um valor
+<option>: define uma opção em uma lista suspensa
+<textarea>: define uma área de texto para coletar dados do usuário
+<button>: define um botão
+<table>: define uma tabela
+<tr>: define uma linha de tabela
+<th>: define uma célula de cabeçalho de tabela
+<td>: define uma célula de dados de tabela
+
+<header>: define a seção de cabeçalho de uma página
+<nav>: define a seção de navegação de uma página
+<main>: define a seção principal de conteúdo de uma página
+<article>: define um artigo independente dentro do conteúdo principal
+<section>: define uma seção dentro do conteúdo principal
+<aside>: define um conteúdo adicional, como uma barra lateral
+<footer>: define a seção de rodapé de uma página
+<figure>: define uma imagem ou vídeo junto com sua legenda
+<figcaption>: define uma legenda para uma imagem ou vídeo
+<time>: define uma data ou hora
+<mark>: define um texto marcado
+<progress>: define um indicador de progresso
+<meter>: define uma medida numérica em um determinado intervalo
+<details>: define um elemento com detalhes adicionais que podem ser expandidos ou recolhidos
+<summary>: define o título ou resumo de um elemento "details"
+<template>: define um modelo de conteúdo que pode ser clonado e inserido múltiplas vezes
+<audio> : Define áudio para tocar
+<video> : define vídeo para tocar
+<source>: especifica diferentes formatos de arquivo para mídia
+<canvas>: define uma área para desenhar gráficos
+<svg>: define gráficos vetoriais
+<math>: define conteúdo matemático
+
+<base>: define uma URL base para todos os links da página
+<command>: define um comando executável
+<keygen>: define uma chave pública de criptografia
+<output>: define o resultado de uma operação
+<ruby>: define anotações de áudio em texto japonês
+<rt>: define a anotação de áudio para o texto japonês
+<rp>: define o conteúdo de backup para o texto japonês anotação
+<wbr>: define um ponto de quebra de palavra sugerido
+<picture>: define uma imagem com várias fontes
+<datalist>: define uma lista de opções para um campo de entrada
+<optgroup>: define um grupo de opções em uma lista suspensa
+<fieldset>: define um conjunto de campos relacionados em um formulário
+<legend>: define uma descrição para um campo set
+<isindex>: legacy tag, definir um campo de entrada de busca
+<dir>:Legacy tag, definir uma lista de diretórios
+
+<bdi>: isola o texto de direção de forma independente
+<bdo>: override a direção de texto
+<col>: define propriedades para uma coluna na tabela
+<colgroup>: define um grupo de colunas na tabela
+<data>: contém valores personalizados para elementos com o atributo "data-"
+<del>: define texto que foi deletado de um documento
+<ins>: define texto que foi adicionado a um documento
+<link>: define uma relação entre um documento e uma URL externa
+<map>: define um mapa de imagem
+<param>: define parâmetros para um objeto
+<sub>: define texto como subescrito
+<sup>: define texto como superescrito
+<time>: define uma data ou hora
+<var>: define uma variável matemática ou de programação
+<track>: define uma faixa de legenda ou subtítulo
+
+<abbr>: Define uma abreviação ou sigla
+<address>: Define informações de contato
+<cite>: Define um título de trabalho (como livro, música, poema)
+<code>: Define um bloco de código
+<dfn>: Define uma definição de termo
+<kbd>: Define o texto digitado pelo usuário
+<pre>: Define pré-formatado texto
+<q>: Define uma citação curta
+<samp>: Define amostra de saída de computador
+<small>: Define pequeno texto
+<strong>: Define texto importante
+<u>: Define texto sublinhado
+
+<blockquote>: Define uma citação longa
+<figure>: Define uma figura com um caption
+<figcaption>: Define um caption para um elemento <figure>
+<hr>: Define uma regra horizontal
+<menuitem>: Define um comando de menu
+<menu>: Define uma lista de comandos
+<style>: Define um bloco de estilo
+<template>: Define um modelo de conteúdo
+<tfoot>: Define uma seção de rodapé de tabela
+<b>: Define negrito
+<i>: Define texto itálico
+<li>: Define um item de lista
+<ol>: Define uma lista ordenada
+<ul>: Define uma lista não ordenada
+<a>: Define um hiperlink
+<link>: Define uma ligação para uma folha de estilo
+<picture>: Define uma imagem com várias fontes
+<br>: Define uma quebra de linha
+
+<caption>: Define uma legenda para uma tabela
+<thead>: Define a seção de cabeçalho de uma tabela
+<tbody>: Define a seção de corpo de uma tabela
+<td>: Define uma célula de dados em uma tabela
+<th>: Define uma célula de cabeçalho em uma tabela
+<tr>: Define uma linha em uma tabela
+<body>: Define o corpo de um documento
+<head>: Define a seção de cabeçalho de um documento
+<html>: Define um documento HTML
+<meta>: Define metadados sobre um documento
+<title>: Define o título de um documento
+<button>: Define um botão
+<datalist>: Define uma lista de opções para um campo de entrada
+<fieldset>: Define um conjunto de campos relacionados em um formulário
+<form>: Define um formulário
+<input>: Define um campo de entrada
+<label>: Define uma descrição para um campo de entrada
+<legend>: Define uma descrição para um fieldset
+<select>: Define uma lista suspensa
+<textarea>: Define uma área de texto
+
+<dialog>: Define uma caixa de diálogo
+<div>: Define uma divisão
+<span>: Define uma pequena seção de um documento
+<h1> to <h6> : Define seções de título
+<p>: Define um parágrafo
+<em> : Define o texto emfatizado
+<strong>: Define o texto importante
+<br>: Define uma quebra de linha
+<hr>: Define uma regra horizontal
+<small> : Define texto pequeno
+<mark> : Define o texto marcado
+<time> : Define uma data ou hora
+<bdo>: Override a direção do texto
+<bdi>: Isolamento de texto direcional
+<figure>: Define uma figura
+<figcaption>: Define a legenda de uma figura
+<img>: Define uma imagem
+<picture>: Define uma imagem com várias fontes
+<video> : Define vídeo
+<audio> : Define áudio
+<source> : Especifica diferentes formatos de arquivo para mídia
+
+<summary>: Define um resumo de um elemento de detalhes
+<details>: Define uma seção de detalhes
+<article>: Define um conteúdo autônomo como uma notícia, postagem de blog, entrevista, etc.
+<aside>: Define um conteúdo relacionado ao conteúdo principal
+<header>: Define uma seção de cabeçalho
+<nav>: Define uma seção de navegação
+<footer>: Define uma seção de rodapé
+<section>: Define uma seção genérica
+<progress>: Define o progresso de uma tarefa
+<output>: Define o resultado de uma operação
+<canvas>: Define um espaço para desenhar gráficos via script
+<svg>: Define uma imagem vetorial baseado em xml
+<picture>: Define uma imagem com várias fontes
+<audio> : Define um arquivo de áudio
+<video> : Define um arquivo de vídeo
+<link>: Define uma ligação para uma folha de estilo
+<source> : Especifica diferentes formatos de arquivo para mídia
+<template>: Define um modelo de conteúdo
+
+<figure>: Define um conteúdo autônomo, geralmente com uma imagem, com uma legenda opcional
+<figcaption>: Define uma legenda para uma figura
+<audio>: Define um arquivo de áudio
+<video>: Define um arquivo de vídeo
+<source>: Especifica diferentes formatos de arquivo para mídia
+<track>: Define uma faixa de legenda ou subtítulo para áudio e vídeo
+<map>: Define um mapa de imagem
+<area>: Define uma área ativa para mapas de imagem
+<meta>: Define metadados para o documento
+<script>: Define um script de programação
+<style>: Define uma seção de estilo para o documento
+<noscript>: Define um conteúdo alternativo para navegadores que não suportam scripts
+<link>: Define uma ligação para uma folha de estilo
+<base>: Define uma URL base para todos os links do documento
+<template>: Define um modelo de conteúdo
+<datagrid>: Define uma tabela de dados
+<command>: Define um comando
+
+<data>: Define um conteúdo de dados de tipo simples
+<time>: Define uma data e/ou hora
+<mark>: Define um texto marcado
+<wbr>: Define uma quebra de palavra
+<var>: Define um conteúdo de uma expressão matemática ou programação
+<output>: Define o resultado de uma operação
+<keygen>: Define um campo para gerar chaves criptográficas
+<meter>: Define uma medida escalar (como capacidade, velocidade, etc.)
+<bdi>: Isolamento de texto direcional
+<bdo>: Define a direção do texto
+<ruby>: Define uma anotação de ruby para o texto chinês ou japonês
+<rt>: Define uma anotação de ruby
+<rp>: Define o conteúdo de anotação de ruby para navegadores que não suportam ruby
+<optgroup>: Define um grupo de opções em uma lista suspensa
+<option>: Define uma opção em uma lista suspensa
+
+<colgroup>: Define um grupo de colunas em uma tabela
+<col>: Define as características de uma coluna em uma tabela
+<tbody>: Define o corpo de uma tabela
+<thead>: Define o cabeçalho de uma tabela
+<tfoot>: Define o rodapé de uma tabela
+<td>: Define uma célula de dados em uma tabela
+<th>: Define uma célula de cabeçalho em uma tabela
+<tr>: Define uma linha em uma tabela
+<abbr>: Define uma abreviação
+<address>: Define um endereço de contato
+<cite>: Define o título de uma obra
+<dfn>: Define o termo que está sendo definido
+<kbd>: Define o texto digitado pelo usuário
+<samp>: Define uma amostra de um código de programação
+<var>: Define o conteúdo de uma expressão matemática ou programação
+
+<sub>: Define um texto com índice
+<sup>: Define um texto com expoente
+<i>: Define um texto com estilo itálico
+<b>: Define um texto em negrito
+<u>: Define um texto sublinhado
+<s>: Define um texto riscado
+<del>: Define um texto excluído
+<ins>: Define um texto inserido
+<code>: Define um texto de código
+<pre>: Define um texto pré-formatado
+<q>: Define uma citação curta
+<blockquote>: Define uma citação longa
+<s>: Define um texto riscado
+<code>: Define um texto de código
+<pre>: Define um texto pré-formatado
+<q>: Define uma citação curta
+<blockquote>: Define uma citação longa
+
+<bdi>: Isolamento de texto bidirecional
+<bdo>: Define a direção do texto
+<wbr>: Define uma quebra de palavra
+<data>: Define um conteúdo de dados de tipo simples
+<time>: Define uma data e/ou hora
+<mark>: Define um texto marcado
+<figure>: Define um conteúdo autônomo, geralmente com uma imagem, com uma legenda opcional
+<figcaption>: Define uma legenda para uma figura
+<audio>: Define um arquivo de áudio
+<video>: Define um arquivo de vídeo
+<source>: Especifica diferentes formatos de arquivo para mídia
+<track>: Define uma faixa de legenda ou subtítulo para áudio e vídeo
+<map>: Define um mapa de imagem
+<area>: Define uma área ativa para mapas de imagem
+<meta>: Define metadados para o documento
+<script>: Define um script de programação
+<style>: Define uma seção de estilo para o documento
+<noscript>: Define um conteúdo alternativo para navegadores que não suportam scripts
+<menu> : Define uma lista de comandos
+<menuitem> : Define um item de menu
+<output> : Define um resultado de uma expressão
+<picture> : Define uma imagem com várias fontes
+<template> : Define um modelo de conteúdo
+<dialog> : Define um caixa de diálogo ou conversa
+<datalist> : Define uma lista de opções predefinidas para inputs
+<fieldset> : Define um conjunto de campos relacionados
+<legend> : Define um título para um fieldset
+<math> : Define conteúdo matemático
+<maction> : Define uma ação em uma expressão matemática
+<mi> : Define um identificador em uma expressão matemática
+<mo> : Define um operador em uma expressão matemática
+<mn> : Define um número em uma expressão matemática
+<ms> : Define um texto em uma expressão matemática

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu carrossel</title>
+  <style>
+  body {
+  overflow: hidden;
+}
+    #carousel {
+  width: 100vw;
+  height: 100px;
+  overflow: hidden;
+}
+#carousel img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#carousel img:first-child {
+  display: block;
+}
+#progress-bar {
+  width: 100%;
+  height: 7px;
+  color: red;
+}
+  </style>
+</head>
+<body>
+  <div id="carousel">
+  <img src="img/01.jpg" alt="Imagem">
+  <img src="img/02.jpg" alt="Imagem">
+  <img src="img/03.jpg" alt="Imagem">
+  <img src="img/04.jpg" alt="Imagem">
+  <img src="img/05.jpg" alt="Imagem">
+  <img src="img/06.jpg" alt="Imagem">
+  <img src="img/07.jpg" alt="Imagem">
+  <img src="img/08.jpg" alt="Imagem">
+  <img src="img/09.jpg" alt="Imagem">
+  <img src="img/010.jpg" alt="Imagem">
+  <img src="img/011.jpg" alt="Imagem">
+  <img src="img/012.jpg" alt="Imagem">
+  <img src="img/013.jpg" alt="Imagem">
+  <img src="img/014.jpg" alt="Imagem">
+  <img src="img/015.jpg" alt="Imagem">
+  <img src="img/016.jpg" alt="Imagem">
+  <img src="img/017.jpg" alt="Imagem">
+  <img src="img/018.jpg" alt="Imagem">
+  <img src="img/019.jpg" alt="Imagem">
+  <img src="img/020.jpg" alt="Imagem">
+</div>
+<progress id="progress-bar" max="100" value="0"></progress>
+</body>
+<script>
+  var carousel = document.getElementById("carousel");
+var images = carousel.getElementsByTagName("img");
+var current = 0;
+var progressBar = document.getElementById("progress-bar");
+// Mostra a próxima imagem
+function nextImage() {
+  images[current].style.display = "none";
+  current = (current + 1) % images.length;
+  images[current].style.display = "block";
+  progressBar.value = 0;
+}
+// Atualiza a barra de progresso
+function updateProgress() {
+  progressBar.value += 1;
+}
+// Chama a função nextImage e updateProgress a cada segundo
+setInterval(nextImage, 1000);
+setInterval(updateProgress, 10);
+</script>
+</html>

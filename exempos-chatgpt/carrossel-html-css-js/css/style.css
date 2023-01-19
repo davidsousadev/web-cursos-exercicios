@@ -1,0 +1,31 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.carousel-item {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes all {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

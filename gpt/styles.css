@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.particle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: constellations 4s infinite linear;
+}
+
+@keyframes constellations {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate(100px, 0) rotate(360deg);
+    }
+}

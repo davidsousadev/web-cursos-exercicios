@@ -1,15 +1,17 @@
-def verifica(s):
-    if (s.isdecimal()):
+#Escreva um programa que leia um caractere e mostra o valor booleano True (verdadeiro) se for uma letra (vogal ou consoante) ou um dígito (entre ‘0’ e ‘9’) ou valor booleano False (falso) caso contrário.
+
+def verificador(x):
+    if (x.isdecimal()):
         s = True
-    elif(s.isalpha()):
-        s = True
+    elif(x.isalpha()):
+        x = True
     else:
-        s = False
-    return s
+        x = False
+    return x
 
 def main():
-    s = str(input().strip())
-    print(verifica(s))
+    x = str(input("Digite um caractere:").strip())
+    print(verificador(x))
     
 if __name__ == '__main__':
     main()

@@ -1,15 +1,17 @@
-def verifica(s):
-    if (s.isdecimal()):
-        s = False
+#Escreva um programa que leia um caractere e mostra o valor booleano True (verdadeiro) se for um SÍMBOLO (o que não é letra ou número) ou o valor booleano False (falso) caso contrário.
+
+def verificador(x):
+    if (x.isdecimal()):
+        x = False
     elif(s.isalpha()):
-        s = False
+        x = False
     else:
-        s = True
-    return s
+        x = True
+    return x
 
 def main():
-    s = str(input().strip())
-    print(verifica(s))
+    x = str(input("Digite um caractere:").strip())
+    print(verificador(x))
     
 if __name__ == '__main__':
     main()

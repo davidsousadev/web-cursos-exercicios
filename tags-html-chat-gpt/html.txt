@@ -1,6 +1,6 @@
 Tags HTML: 
 
-David Sousa da Silva
+David Sousa da Silva.
 Todas as tags html
 
 <html>: define um documento HTML

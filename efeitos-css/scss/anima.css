@@ -9,7 +9,7 @@ body{
 .texto{
   overflow: hidden;
   position: relative;
-  
+  background-color: #157bad;
   /*&::after {
     animation: txt 1s cubic-belier(0.85, 0, 0.15, 1) forwards;
     background-color: #157bad;

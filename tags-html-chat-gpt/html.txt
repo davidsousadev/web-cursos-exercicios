@@ -1,7 +1,10 @@
-Tags HTML: 
+Tags HTML:
 
 David Sousa da Silva.
-Todas as tags html
+Todas as tags html:
+apacidade
+enviar
+subescrito
 
 <html>: define um documento HTML
 <head>: contém informações sobre o documento, como o título da página

@@ -39,22 +39,22 @@ def calcularMedia(n1, n2, n3, mediaExercicio):
 
 
 def main():
-    matricula = str(input().strip())
-    n1 = float(input())
-    n2 = float(input())
-    n3 = float(input())
-    mediaExercicio = float(input())
+    matricula = str(input("Digite a matricula: ").strip())
+    n1 = float(input("Digite a primeira nota: "))
+    n2 = float(input("Digite a segunda nota: "))
+    n3 = float(input("Digite a terceira nota: "))
+    mediaExercicio = float(input("Digite a média dos exercicios: "))
 
     media, conceito = calcularMedia(n1, n2, n3, mediaExercicio)
 
-    print(f'{matricula}')
-    print('%.2f'%media)
-    print(f'{conceito}')
+    print(f'Essa é a matricula: {matricula}')
+    print(f'Essa é a média: ''%.2f'%media)
+    print(f'Esse é o conceito: {conceito}')
 
     if conceito in ['A', 'B', 'C']:
-        print("Aprovado")
+        print(f'Essa é a situação: Aprovado')
     else:
-        print("Reprovado")
+        print(f'Essa é a situação: Reprovado')
 
 
 

@@ -8,8 +8,13 @@ Faça o programa de forma a gerar a letra da música com o número de bugs no so
 250.
 '''
 
+
+
 def main():
     for x in range(99, 251):
         print(f'{x} bugs no software, pegue um deles e conserte...')
+
+
+
 if __name__ == '__main__':
     main()

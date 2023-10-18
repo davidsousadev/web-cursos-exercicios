@@ -11,10 +11,12 @@ Tecle “Ctrl+F5” Vamos fazer mais um café!
 
 
 def main():
-
     for x in range(99, 251):
         print(f'{x} bugs no software, pegue um deles e conserte...')
         print(f'Tecle "Ctrl+F5"')
-    print(f'Vamos fazer mais um café!')     
+    print(f'Vamos fazer mais um café!')   
+
+    
+      
 if __name__ == '__main__':
     main()

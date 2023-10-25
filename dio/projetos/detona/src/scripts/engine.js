@@ -11,18 +11,18 @@ const state = {
         result: 0,
         currentTime: 60,
     },
-    actions:{
+    actions: {
         timerId: setInterval(randomSquare,1000),
-        contDownTimerid: setInterval(counDown, 1000),
+        countDownTimerid: setInterval(countDown, 1000),
     }
 
 }
 
-function counDown(){
+function countDown(){
     state.values.currentTime--;
     state.view.timeLeft.textContent = state.values.currentTime;
     if (state.values.currentTime <= 0){
-        clearInterval(state.actions.countDownTimerId);
+        clearInterval(state.actions.countDownTimerid);
         clearInterval(state.actions.timerId);
         alert("Game Over: O seu resultado foi: " + state.values.result);
     }

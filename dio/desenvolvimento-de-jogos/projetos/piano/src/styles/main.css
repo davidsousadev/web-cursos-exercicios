@@ -96,7 +96,7 @@ header .column span{
     width: 44px;
     height: 140px;
     z-index: 2;
-    margin: 0 22px 0 -22px;
+    margin: 0 -22px 0 -22px;
     border: 1px solid black;
     border-radius: 0 0 5px 5px;
     background: linear-gradient(#333 , #000);
@@ -117,7 +117,7 @@ header .column span{
 }
 
 .piano-keys .black:active{
-    box-shadow: inset -5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
     background: linear-gradient(to bottom #000, #434343);
 
 }

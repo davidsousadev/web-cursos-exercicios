@@ -1,7 +1,9 @@
 '''Escreva um programa que leia dois valores inteiros (x e y) e mostre todos os números primos entre x e y.
 
 '''
-def numero_primo(n):
+
+
+def numeroPrimo(n):
     if n <= 1:
         return False
     for i in range(2, int(n**0.5) + 1):
@@ -11,12 +13,18 @@ def numero_primo(n):
 
 
 
-def main():
-    x = int(input())
-    y = int(input())
+def imprimePrimos(x, y):
     for n in range(x, y + 1):
-        if numero_primo(n):
+        if numeroPrimo(n):
             print(f"{n}")
+
+
+
+def main():
+    x = int(input("Digite um número: "))
+    y = int(input("Digite outro número: "))
+    imprime = imprimePrimos(x, y)
+    
 
 
             

@@ -2,15 +2,24 @@
 
 Escreva um programa que leia a população de aves no início do ano 1600 e imprime, anualmente, a partir do fim de 1600, o número de nascimentos, mortes e o total da população por ano (apenas a parte inteira do números, separados por vírgula). O programa encerra sua execução quanto a população total cai para menos de 10% da população original.'''
 
-def populacao(pi):
-    pa = pi
+def populacao(populacaoInicial):
+    populacaoAtual = populacaoInicial
     ano = 1600
-    pi *= 0.1
-    while pa >= pi:
-        n = pa / 100
-        mortes = pa / 100 * 6
-        pa = pa + n - mortes
-        print(f"{ano},{round(n)},{round(mortes)},{round(pa)}")
+    populacaoInicial *= 0.1
+    while populacaoAtual >= populacaoInicial:
+        nascimentos = populacaoAtual / 100
+        mortes = populacaoAtual / 100 * 6
+        populacaoAtual = populacaoAtual + nascimentos - mortes
+        print(f"Ano {ano}, Nascimentos {round(nascimentos)}, Mortes {round(mortes)}, População Atual {round(populacaoAtual)}.")
         ano += 1
 
-populacao(int(input()))
+
+
+def main():
+    populacaoInicial = int(input("Digite o valor da população inicial: "))
+    populacaoAtual = populacao(populacaoInicial)
+    print("O programa encerrou a população total caiu para menos de 10%% da população original.")
+
+
+if __name__ == '__main__':
+    main()

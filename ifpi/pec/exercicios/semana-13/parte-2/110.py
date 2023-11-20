@@ -6,7 +6,7 @@
 
 def inserirElementos(n, lista):
     for i in range(n):
-        x = input().strip()
+        x = input("Digite os itens da lista: ").strip()
         try:
             x = float(x)
         except ValueError:
@@ -17,7 +17,7 @@ def inserirElementos(n, lista):
 
 
 def main():
-    n = int(input())
+    n = int(input("Digite a quantidade de itens: "))
     lista = []
     lista = inserirElementos(n, lista)
     if sorted(lista) == lista:

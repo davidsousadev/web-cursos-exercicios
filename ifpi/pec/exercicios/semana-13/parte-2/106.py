@@ -4,22 +4,29 @@
 
 
 
-def multiplica_constante(lista, constante):
-    return [elemento * constante for elemento in lista]
+def multiplica_constante(numeros, constante):
+    consoantes = []
+    for elemento in numeros:
+        elementos = elemento * constante
+        consoantes.append(elementos)
+    return consoantes
 
-
-
-def main():
-    numeros = []
+def inserirItens(numeros):
     while True:
-        numero = int(input())
+        numero = int(input("Digite um numero / Digite 0 para encerrar o loop!"))
         if numero == 0:
             break
         numeros.append(numero)
+    return numeros
 
-    constante = int(input())
+def main():
+    numeros = []
+
+    numeros = inserirItens(numeros)
+
+    constante = int(input("Digite o valor para multiplicar os itens: "))
     nova_lista = multiplica_constante(numeros, constante)
-    print(nova_lista)
+    print(f"Lista multiplicada: {nova_lista}")
     
     
     

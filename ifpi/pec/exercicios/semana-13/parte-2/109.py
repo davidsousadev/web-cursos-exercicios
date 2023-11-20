@@ -8,11 +8,11 @@
 
 
 
-def soma_cumulativa(lista_original):
+def somacumulativa(minhalista):
     soma = 0
     lista_soma_cumulativa = []
 
-    for elemento in lista_original:
+    for elemento in minhalista:
         soma += elemento
         lista_soma_cumulativa.append(soma)
 
@@ -21,12 +21,12 @@ def soma_cumulativa(lista_original):
 def main():
     numeros = []
     while True:
-        numero = int(input())
+        numero = int(input("Digite um numero / Digite 0 para sair do loop: "))
         if numero == 0:
             break
         numeros.append(numero)
-    lista_soma_cumulativa = soma_cumulativa(numeros)
-    print(lista_soma_cumulativa)
+    lista_soma_cumulativa = somacumulativa(numeros)
+    print(f"Essa e alista comulativa: {lista_soma_cumulativa}")
 
 if __name__ == "__main__":
     main()

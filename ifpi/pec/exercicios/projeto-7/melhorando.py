@@ -3,7 +3,7 @@ mensagem = input("Por favor, entre com a mensagem a ser criptografada: ").lower(
 mensagemCriptografada = ""
 
 chave = input("Por favor, entre a chave: ")
-chave = int(chave)
+chave = int (chave)
 chave += 1
 
 for char in mensagem:
@@ -15,5 +15,5 @@ for char in mensagem:
         mensagemCriptografada = mensagemCriptografada + char
 
 mensagemCriptografada = mensagemCriptografada.replace(" ", "")
-      
+    
 print("Sua mensagem criptografade é: ", mensagemCriptografada)

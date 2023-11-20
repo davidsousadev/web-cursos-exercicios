@@ -23,7 +23,7 @@ def prencherListaSeguencia(n, s, c):
 def prencherListaInput(n, i):
     while True:
         for x in range(n):
-            c = int(input())
+            c = int(input("Insira um item a lista: "))
             i.append(c)
         if (n > 0):
             return i
@@ -32,7 +32,7 @@ def prencherListaInput(n, i):
 def prencherListaInputReverso(n, r):
     while True:
         for x in range(n):
-            c = int(input())
+            c = int(input("Insira um item a lista: "))
             r.insert(0, c)
         if (n > 0):
             return r

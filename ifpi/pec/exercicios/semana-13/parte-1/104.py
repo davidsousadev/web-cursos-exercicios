@@ -1,22 +1,23 @@
 # Leia 20 números inteiros e armazene-os numa lista. Armazene os números pares na lista PAR e os números ímpares na lista IMPAR. Imprima as três listas
-
-
-
-def main():
-    n = []
-    pares = []
-    impares = []
+def listaParesImpares(lista,pares,impares):
     for i in range(20):
-        num = int(input())
-        n.append(num)
+        num = int(input("Digite um valor: "))
+        lista.append(num)
         if num % 2 == 0:
             pares.append(num)
         else:
             impares.append(num)
+    return lista, pares, impares
 
-    print(n)
-    print(pares)
-    print(impares)
+
+def main():
+    lista = []
+    pares = []
+    impares = []
+    n, pares, impares = listaParesImpares(lista,pares,impares)
+    print(f"Lista: {lista}")
+    print(f"Lista pares: {pares}")
+    print(f"Lista impares: {impares}")
 
 
 

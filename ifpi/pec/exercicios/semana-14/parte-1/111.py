@@ -10,11 +10,24 @@ Dica: Você pode usar esses nomes para suas funções: comprimento(), inverter()
 '''
 
 
+
+def inserirItens(elementos):
+    while True:
+        valor = int(input("Digite numero inteiro / digite 0 para o loop: "))
+        if valor == 0:
+            break
+        elementos.append(valor)
+    return elementos
+
+
+
 def comprimento(lista):
     cont = 0
     for _ in lista:
         cont += 1
     return cont
+
+
 
 def inverter(lista):
     lista_invertida = []
@@ -22,12 +35,17 @@ def inverter(lista):
         lista_invertida.append(lista[i])
     return lista_invertida
 
+
+
 def minimo(lista):
-    menor = float()
-    for num in lista:
-        if num < menor:
-            menor = num
-    return menor
+    if lista != []:
+        menor = sorted(lista)
+        menor = menor[0]
+        return menor
+    else:
+        return 0
+
+
 
 def maximo(lista):
     maior = float()
@@ -36,23 +54,27 @@ def maximo(lista):
             maior = num
     return maior
 
+
+
 def soma(lista):
     total = 0
     for num in lista:
         total += num
     return total
 
-# Programa principal
-elementos = []
-while True:
-    valor = int(input())
-    if valor == 0:
-        break
-    elementos.append(valor)
 
-print(elementos)
-print(comprimento(elementos))
-print(inverter(elementos))
-print(minimo(elementos))
-print(maximo(elementos))
-print(soma(elementos))
+
+def main():
+    elementos = []
+    elementos = inserirItens(elementos)
+    print(f"Lista dos elementos: {elementos}")
+    print(f"Contem {comprimento(elementos)} elementos.")
+    print(f"Lista dos elementos invertidos: {inverter(elementos)}")
+    print(f"Menor numero: {minimo(elementos)}")
+    print(f"Maior numero: {maximo(elementos)}")
+    print(f"Soma dos numeros: {soma(elementos)}")
+
+
+
+if __name__ == '__main__':
+    main()

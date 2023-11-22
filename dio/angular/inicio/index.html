@@ -2,30 +2,20 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/card.css">
-    <script src="src/componetes/CardexNews.js" defer></script>
-    <script src="src/componetes/TituloDinamico.js" defer></script>
-    <title>PORTAL DE NOTICIAS GALATICA</title>
+    <title>PORTAL DE NOTICÍAS GALACTICA</title>
+    <link rel="stylesheet" href="styles/card.css">
+    <script src="src/Components/CardNews.js" defer></script>
+    <script src="src/Components/TituloDinamico.js" defer></script>
 </head>
 <body>
-    <div class="conteiner">
-        <div class="card">
-            <div class="card__letf">
-                <span>By David Sousa</span>
-                <a href="#">Darth Vader Contrata Devs</a>
-                <p>Darth Vader procura desenvolvedores que saibam trabalhar com componentes</p>
+    <div class="app-root">
+        <card-news  autor="David" title="Darth Vader Contrata" link-url="www.google.com" photo="assets/imagens/darth-vader.jpg" contet="Darth Vader procura desenvolvedores que sabem trabalhar com componentes."></card-news>
 
-            </div>
-            <div class="card__rigth">
-                <img src="assets/imagens/darth-vader.jpg" alt="darth-vader">
-            </div>
+        <card-news title="Yoda convence replubica a utilizar components" link-url="www.google.com/yoda" contet="Yoda se pronuncia e choca a republica." photo="assets/imagens/darth-vader.jpg"></card-news>
 
-        </div>
-    </div>
-    <card-news titulo="David"></card-news>
-    <titulo-dinamico titulo="David Sousa"></titulo-dinamico>
-    <titulo-dinamico titulo="TDS">
-    </titulo-dinamico>
+        <card-news title="Yoda convence replubica a utilizar components" link-url="www.google.com/yoda" contet="Yoda se pronuncia e choca a republica." photo="assets/imagens/darth-vader.jpg"></card-news>
+
 </body>
 </html>

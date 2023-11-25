@@ -1,0 +1,10 @@
+npm init -y // inicar
+npm install typescript -D // instalar localmente
+
+npx tsc nomedoarquivo.ts // para converter para js
+
+npx tsc --init // ccriar um arquivo de configuração typescript
+
+npx tsc //transpila todos os arquivos ts 
+
+//atenção para configurar pasta de arquivos "rootDir": "./src", , pasta de envio "outDir": "./build", , desabilitar comentarios "removeComments": true, 

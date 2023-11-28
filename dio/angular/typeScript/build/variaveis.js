@@ -14,4 +14,9 @@ let objeto = {
     idade: 27,
     ativo: true,
 };
+let novaPessoa = {
+    nome: "Ariely",
+    idade: 22,
+    ativo: true,
+};
 console.log(variavel, numero, texto, nulo, indefinida, coisa, coisa2, coisa3, objeto);

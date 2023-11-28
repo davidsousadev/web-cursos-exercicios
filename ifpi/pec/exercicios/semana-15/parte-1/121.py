@@ -15,21 +15,25 @@ def temperaturaMaior(temp1, temp2):
         temp2, escala2 = converterTemperatura(temp2, escala2)
 
     if temp1 > temp2:
-        return temp1
+        return temp1, escala1
     else:
-        return temp2
+        return temp2, escala2
 
 
 
 def main():
+    tupla = []
     temp1 = float(input())
-    escala1 = input().upper()[0]
+    escala1 = str(input().strip().upper()[0])
 
     temp2 = float(input())
-    escala2 = input().upper()[0]
+    escala2 = str(input().strip().upper()[0])
 
-    maior = temperaturaMaior((temp1, escala1), (temp2, escala2))
-    print(maior)
+    temp, escala = temperaturaMaior((temp1, escala1), (temp2, escala2))
+    tupla.append(temp)
+    tupla.append(escala)
+    tupla = tuple(tupla)
+    print(tupla)
 
 if __name__=='__main__':
     main()

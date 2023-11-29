@@ -33,4 +33,16 @@ let novaPessoa: pessoa = {
     ativo: true,
 }
 
-console.log(variavel, numero, texto, nulo,indefinida,coisa,coisa2,coisa3, objeto);
+let dados: string [] = ["Array","tipo","string", "hahaha"];
+
+let dados2: Array<string> = ["Outro tipo","de","Array"];
+
+let infos: (string | number | boolean)[] = ["David", 10, true];
+
+let boleto: [string, number, number] = ["Agua", 80, 8080800];
+
+dados.pop()
+
+let data: Date = new Date('2023-11-29 12:03');
+
+console.log(variavel, numero, texto, nulo,indefinida,coisa,coisa2,coisa3, objeto, dados, dados[1], dados2, infos, boleto, data);

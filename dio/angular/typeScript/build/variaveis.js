@@ -19,4 +19,10 @@ let novaPessoa = {
     idade: 22,
     ativo: true,
 };
-console.log(variavel, numero, texto, nulo, indefinida, coisa, coisa2, coisa3, objeto);
+let dados = ["Array", "tipo", "string", "hahaha"];
+let dados2 = ["Outro tipo", "de", "Array"];
+let infos = ["David", 10, true];
+let boleto = ["Agua", 80, 8080800];
+dados.pop();
+let data = new Date('2023-11-29 12:03');
+console.log(variavel, numero, texto, nulo, indefinida, coisa, coisa2, coisa3, objeto, dados, dados[1], dados2, infos, boleto, data);

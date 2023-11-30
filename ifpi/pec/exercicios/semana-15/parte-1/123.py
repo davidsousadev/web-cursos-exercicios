@@ -17,17 +17,18 @@
 # print(cidades[:3] + cidades[-2:])
 
 
-def carrega_cidades():
+def carrega_cidades(diaA,mesA):
     resultado = []
+    aniversariantes = []
+    print(f"CIDADES QUE FAZEM ANIVERSÁRIO EM {diaA} DE {meses(mesA)}:")
     with open('cidades.csv', 'r', encoding='utf-8') as arquivo:
         for linha in arquivo:
             uf, ibge, nome, dia, mes, pop = linha.split(';')
-            resultado.append(
-                (uf, int(ibge), nome, int(dia), int(mes), int(pop))
-            )
+            if diaA==int(dia) and mesA==int(mes):
+                print(f"{nome}({uf})")
     arquivo.close()
-    return resultado
-
+    
+    return aniversariantes 
 
 
 def meses(mes):
@@ -59,10 +60,7 @@ def meses(mes):
 def main():
     dia = int(input())
     mes = int(input())
-    cidades = carrega_cidades()
-    print(cidades[:3] + cidades[-2:])
-
-    print(f"CIDADES COM MAIS DE 50000 HABITANTES:")
+    cidades = carrega_cidades(dia,mes)
 
 if __name__=='__main__':
     main()

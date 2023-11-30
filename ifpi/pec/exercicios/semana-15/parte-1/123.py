@@ -28,8 +28,7 @@ def carrega_cidades():
     arquivo.close()
     return resultado
 
-cidades = carrega_cidades()
-print(cidades[:3] + cidades[-2:])
+
 
 def meses(mes):
     if (mes == 1):

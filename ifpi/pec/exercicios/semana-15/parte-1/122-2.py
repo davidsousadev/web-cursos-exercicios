@@ -13,13 +13,13 @@ def temperaturaMaisAlta(temp1,temp2):
  
     if (escala1 != escala2):
         if (escala1 == "F"):
-            valor1 = convertecelcius(valor1)
+            temp1 = convertecelcius(temp1)
             escala1 = "C"
         else:
-            valor1 = converteFahrenheit(valor1)
+            temp1 = converteFahrenheit(temp1)
             escala1 = "F"
 
-    return round(valor1 + valor2, 4), escala2
+    return round(temp1 + temp2, 4), escala2
 
 
 def main():

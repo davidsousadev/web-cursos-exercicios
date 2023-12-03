@@ -15,7 +15,7 @@ def carrega_cidades(valor):
 
     
 def main():
-    valor = int(input())
+    valor = int(input("Digite o valor da quantidade de habitantes: "))
     cidades = carrega_cidades(valor)
 
 if __name__=='__main__':

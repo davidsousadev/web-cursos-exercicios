@@ -22,16 +22,16 @@ def temperatura_mais_alta(temp1, temp2):
 
 def main():
     tupla = ()
-    temp1 = float(input())
-    escala1 = str(input().upper()[0])
-    temp2 = float(input())
-    escala2 = str(input().upper()[0])
+    temp1 = float(input("Digite a primeira temperatura: "))
+    escala1 = str(input("Digite a primeira escala: ").upper()[0])
+    temp2 = float(input("Digite a segunda temperatura: "))
+    escala2 = str(input("Digite a segunda escala: ").upper()[0])
     resultado = temperatura_mais_alta((temp1, escala1), (temp2, escala2))
     
     tupla += (resultado[0],)
     tupla += (resultado[1],)
     
-    print (tupla)
+    print (f"Essa e a maior temperatura {tupla[0]} e a escala {tupla[1]}")
 
 if __name__ == "__main__":
     main()

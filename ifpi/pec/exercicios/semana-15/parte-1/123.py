@@ -58,8 +58,8 @@ def meses(mes):
         return "DEZEMBRO"
     
 def main():
-    dia = int(input())
-    mes = int(input())
+    dia = int(input("Digite o dia: "))
+    mes = int(input("Digite o mes: "))
     cidades = carrega_cidades(dia,mes)
 
 if __name__=='__main__':

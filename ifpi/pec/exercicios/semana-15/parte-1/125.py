@@ -40,8 +40,8 @@ def meses(mes):
         return "DEZEMBRO"
     
 def main():
-    mes = int(input())
-    valor = int(input())
+    mes = int(input("Digite o mes: "))
+    valor = int(input("Digite o valor da quantidade de habitantes: "))
     cidades = carrega_cidades(mes, valor)
 
 if __name__=='__main__':

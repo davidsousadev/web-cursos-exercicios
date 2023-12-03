@@ -23,14 +23,14 @@ def temperaturaMaisAlta(temp1,temp2):
 
 
 def main():
-    temp1 = float(input())
-    escala1 = str(input().upper()[0])
-    temp2 = float(input())
-    escala2 = str(input().upper()[0])
+    temp1 = float(input("Digite a primeira temperatura: "))
+    escala1 = str(input("Digite a primeira escala: ").upper()[0])
+    temp2 = float(input("Digite a segunda temperatura: "))
+    escala2 = str(input("Digite a segunda escala: ").upper()[0])
 
     tupla = temperaturaMaisAlta((temp1, escala1), (temp2, escala2))
 
-    print(f"{tupla}")
+    print (f"Essa e a soma das temperaturas {tupla[0]} e a escala {tupla[1]}")
     
 if __name__ == "__main__":
     main()

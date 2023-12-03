@@ -29,7 +29,7 @@ def ler_faturamento():
     for ano in range(anos):
         for filial in range(filiais):
             for mes in range(meses):
-                valor = int(input())
+                valor = int(input(f"Digite o valor do faturamento da filial {filial+1} no ano {ano+1} mes {mes+1}: "))
                 faturamento[ano][filial][mes] = valor
 
     return faturamento

@@ -6,7 +6,7 @@ def ler_matriz(n, m):
     for i in range(n):
         linha = []
         for j in range(m):
-            elemento = int(input())
+            elemento = int(input(f"Digite o elemento na linha {i+1} coluna {j+1}: "))
             linha.append(elemento)
         matriz.append(linha)
     return matriz
@@ -23,14 +23,14 @@ def calcular_estatisticas(matriz):
     return primeira_linha, ultima_coluna, media, menor, maior
 
 def main():
-    n = int(input())
-    m = int(input())
+    n = int(input("Digite a quantidade de linhas: "))
+    m = int(input("Digite a quantidade de colunas: "))
 
     matriz = ler_matriz(n, m)
 
-    estatisticas = calcular_estatisticas(matriz)
+    primeira_linha, ultima_coluna, media, menor, maior = calcular_estatisticas(matriz)
 
-    print(f"{estatisticas}")
+    print(f"Soma da primeira linha: {primeira_linha}\nSoma da ultima coluna: {ultima_coluna}\nMedia: {media}\nMenor elemento: {menor}\nMaior elemento: {maior}")
 
 if __name__ == "__main__":
     main()

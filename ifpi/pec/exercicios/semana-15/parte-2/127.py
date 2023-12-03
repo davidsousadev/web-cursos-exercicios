@@ -8,22 +8,24 @@ def converter_para_kelvin(temperatura, escala):
         return round(((temperatura - 32) * 5/9 + 273.15), 2)
     elif escala == 'K':
         return temperatura
-       
-def main():
+    
+def calculoDeTemperaturas():
     meses = [
         "Janeiro", "Fevereiro", "Março", "Abril",
         "Maio", "Junho", "Julho", "Agosto",
         "Setembro", "Outubro", "Novembro", "Dezembro"
-    ]
-
+        ]
     temperaturas = []
     for i in range(12):
-        temperatura = float(input())
-        escala = str(input().strip())
+        temperatura = float(input(f"Digite a temperatura {i+1}: "))
+        escala = str(input(f"Digite a escala {i+1}: ").strip())
         temperatura_kelvin = converter_para_kelvin(round(temperatura, 2), escala.upper())
-        temperaturas.append(temperatura_kelvin)
-
+        temperaturas.append(temperatura_kelvin)    
     media_anual_kelvin = round ((sum(temperaturas) / len(temperaturas)), 2)
+    return media_anual_kelvin, temperaturas, meses
+       
+def main():
+    media_anual_kelvin, temperaturas, meses = calculoDeTemperaturas()
     print("TEMPERATURA MÉDIA ANUAL")
     print(f"{round(media_anual_kelvin, 2)}K")
     print("TEMPERATURAS ACIMA DA MÉDIA ANUAL:")

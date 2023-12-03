@@ -17,7 +17,7 @@ def ler_dados():
     dados = {}
 
     for fabricante in fabricantes:
-        vendas = [int(input()) for ano in range(2013, 2019)]
+        vendas = [int(input(f"Digite a quantidade de vendas do fabricante {fabricante} no ano {ano}: ")) for ano in range(2013, 2019)]
         dados[fabricante] = vendas
 
     return dados
@@ -40,8 +40,7 @@ def media_anual_vendas(dados):
 
 def main():
     dados = ler_dados()
-
-    ano_escolhido = int(input())
+    ano_escolhido = int(input("Digite um ano entre 2013 e 2019: "))
     fabricante_mais_vendido, quantidade_vendida = fabricante_mais_vendeu_ano(dados, ano_escolhido)
     print(f"A fabricante que mais vendeu em {ano_escolhido} foi a {fabricante_mais_vendido} com {quantidade_vendida} mil unidades.")
 

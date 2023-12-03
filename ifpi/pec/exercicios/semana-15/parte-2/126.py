@@ -22,7 +22,7 @@ def inserirDados(qtd):
     for i in range(qtd):
         lista = []
         for j in range(qtd):
-            elemento = float(input())
+            elemento = float(input(f"Digite o elemento para linha {i+1} e coluna {j+1}: "))
             lista.append(elemento)
         tupla.append(lista)
     return tupla
@@ -31,10 +31,10 @@ def inserirDados(qtd):
 
 def main():
 
-    qtd = int(input())
+    qtd = int(input("Digite a quantidade de linhas e colunas da matriz quadratica: "))
     tupla = inserirDados(qtd)
     posicaoMaior, posicaoMenor = maiorEMenor(tupla)
-    print(f"{posicaoMaior}\n{posicaoMenor}")
+    print(f"Esse e o maior elemento e sua posição {posicaoMaior}\nEssse e o menor elemento e sua posição {posicaoMenor}")
 
 
 

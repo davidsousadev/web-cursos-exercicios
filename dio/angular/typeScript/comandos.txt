@@ -8,3 +8,12 @@ npx tsc --init // ccriar um arquivo de configuração typescript
 npx tsc //transpila todos os arquivos ts 
 
 //atenção para configurar pasta de arquivos "rootDir": "./src", , pasta de envio "outDir": "./build", , desabilitar comentarios "removeComments": true, 
+
+//não precosa bildar toda vez
+npm install ts-node-dev -D
+
+//alterar o arquivo package.json
+"scripts": {
+    "start:dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+}
+

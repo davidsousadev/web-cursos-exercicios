@@ -1,10 +1,13 @@
-node -v 
-v21.5.0
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+node -v
+v20.10.0
+
 npm -v
-10.2.5
+10.2.3
+
 ng v
-Node.js version v21.5.0 detected.
-Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/previous-releases/.
 
      _                      _                 ____ _     ___
     / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
@@ -15,8 +18,8 @@ Odd numbered Node.js versions will not enter LTS status and should not be used f
     
 
 Angular CLI: 17.0.8
-Node: 21.5.0 (Unsupported)
-Package Manager: npm 10.2.5
+Node: 20.10.0
+Package Manager: npm 10.2.3
 OS: linux x64
 
 Angular: 17.0.8
@@ -34,4 +37,3 @@ rxjs                            7.8.1
 typescript                      5.2.2
 zone.js                         0.14.2
     
-Warning: The current version of Node (21.5.0) is not supported by Angular.

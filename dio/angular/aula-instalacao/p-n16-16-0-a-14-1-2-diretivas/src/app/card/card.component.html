@@ -1,0 +1,22 @@
+<h1 *ngIf="true">Carinho</h1>
+<ul>
+    <li *ngFor="let p of produtos; let i = index">{{i+1}} : {{p}} - <a (click)="excluir(i)">X</a></li>
+</ul>
+
+<div [ngSwitch]="menuType">
+    <div *ngSwitchDefault>
+        <button (click)="adicionar()">Adicionar</button>
+        <button (click)="remover()">Remover</button>
+    </div>
+    <div *ngSwitchCase="'admin'" >
+        <button (click)="adicionar()">Adicionar</button>
+        <button (click)="remover()">Remover</button>
+        <button>Gerenciar Users</button>
+    </div>
+    <div *ngSwitchCase="'superuser'" >
+        <button (click)="adicionar()">Adicionar</button>
+        <button (click)="remover()">Remover</button>
+        <button>Gerenciar Users</button>
+        <button>Gerenciar Admins</button>
+    </div>
+</div>

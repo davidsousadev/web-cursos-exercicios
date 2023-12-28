@@ -37,3 +37,42 @@ rxjs                            7.8.1
 typescript                      5.2.2
 zone.js                         0.14.2
     
+
+
+
+
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+node -v
+v16.16.0
+
+npm -v
+8.11.0
+
+
+ng v
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
+
+Angular CLI: 14.1.2
+Node: 16.16.0
+Package Manager: npm 8.11.0 
+OS: linux x64
+
+Angular: 
+... 
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1401.2 (cli-only)
+@angular-devkit/core         14.1.2 (cli-only)
+@angular-devkit/schematics   14.1.2 (cli-only)
+@schematics/angular          14.1.2 (cli-only)

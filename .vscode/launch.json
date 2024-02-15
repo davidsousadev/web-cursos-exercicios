@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "AreaCircunferencia",
+            "request": "launch",
+            "mainClass": "AreaCircunferencia",
+            "projectName": "web-cursos-exercicios_b4ac8302"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",

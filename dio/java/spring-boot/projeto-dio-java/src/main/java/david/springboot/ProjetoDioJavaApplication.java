@@ -8,6 +8,7 @@ public class ProjetoDioJavaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjetoDioJavaApplication.class, args);
+		
 	}
 
 }

@@ -4,3 +4,4 @@ dio/angular/desafios/blog001/node_modules
 dio/angular/typeScript/node_modules
 
 *.class
+.fake

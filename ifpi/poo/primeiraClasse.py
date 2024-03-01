@@ -25,8 +25,8 @@ class computador:
         if self.estado == 'ligado':
             if self.capacidade_hd_max-tamanho > 0:
                 self.capacidade_hd_max-=tamanho
-                self.quantidade_arquivos +=1
                 self.arquivos[self.quantidade_arquivos] = (nome_arquivo,tamanho)
+                self.quantidade_arquivos +=1
                 print(f"Arquivo de {tamanho} GB adicionado no HD.")
             else:
                 print("Memoria Cheia!")
@@ -37,23 +37,40 @@ class computador:
         
     def listar_arquivos(self):
         if self.estado == 'ligado':
-            for x in range(len(self.arquivos)):
-                if self.arquivos[x+1]:
-                    print(f"Nome: {self.arquivos[x+1][0]} | {self.arquivos[x+1][1]}")
-            return f"{len(self.arquivos)} arquivos"
+            for x in range(0,self.quantidade_arquivos):
+                print(f"Nome: {self.arquivos[x][0]} | {self.arquivos[x][1]}")
+        return f"{self.quantidade_arquivos} arquivos"
 
         
 
     def deletar_arquivo(self):
         if self.estado == 'ligado':
             nome_arquivo = str(input("Qual o nome do arquivo: ").strip())
-            for x in range(len(self.arquivos)):
-                if self.arquivos[x+1][0]==nome_arquivo:
-                    self.capacidade_hd_max += self.arquivos[x+1][1]
-                    if self.arquivos.pop(x+1):
-                        return f"Apagado com sucesso!!!"
+            quantidade = 0
+            for x in range(self.quantidade_arquivos):
+                if self.arquivos[x][0]==nome_arquivo:
+                    quantidade +=1
+                    print(self.arquivos[x][0])
+            if quantidade >= 2:
+                opcao = input((f"Exite mais de um arquivo com esse nome: {nome_arquivo}\nDeseja apagar todos:\n 1 - Sim \n2 - Não ").strip())
+                if opcao==1:    
+                    for x in range(self.quantidade_arquivos):
+                        if self.arquivos[x][0]==nome_arquivo:
+                            self.capacidade_hd_max += self.arquivos[x][1]
+                            self.quantidade_arquivos -= 1
+                            self.arquivos.update(x = (None,None))
+                    return f"Apagado com sucesso!!!"
                 else:
-                    return f"Arquivo invalido!!!" 
+                    return f"Operação cancelada!!!" 
+            elif quantidade==1:
+                for x in range(self.quantidade_arquivos):
+                        if self.arquivos[x][0]==nome_arquivo:
+                            self.capacidade_hd_max += self.arquivos[x][1]
+                            self.quantidade_arquivos -= 1
+                            self.arquivos.update(x = (None,None))
+                return f"Apagado com sucesso!!!"
+            else:
+                return f"Arquivo {nome_arquivo} não encontrado!!!" 
 
     
          
@@ -65,7 +82,8 @@ dell_inspiron.memori_ram_max = "8GB"
 dell_inspiron.capacidade_hd_max = 1000
 
 while True:
-    opcao = int(input("""
+    try:
+        opcao = int(input("""
 =============== MENU INICIAR ===============
 Escolha uma opção:
 1 - Liga o computador
@@ -77,29 +95,28 @@ Escolha uma opção:
 0 - Sair
 """))
     
-    if opcao==1:
-       dell_inspiron.ligar()
-       print(f"Computador {dell_inspiron.estado}.\n")
-    elif opcao==2:  
-        dell_inspiron.estado = 'desligado'
-        print(f"Computador {dell_inspiron.estado}.\n")
-    elif opcao==3:
-        if dell_inspiron.estado == 'ligado':
-            nome = str(input("Digite nome do arquivo: ").strip())
-            tamanho = int(input("Digite o Tamanho do arquivo em GB: "))
-            dell_inspiron.criar_arquivo(nome, tamanho)
+        if opcao==1:
+           dell_inspiron.ligar()
+           print(f"Computador {dell_inspiron.estado}.\n")
+        elif opcao==2:  
+            dell_inspiron.estado = 'desligado'
+            print(f"Computador {dell_inspiron.estado}.\n")
+        elif opcao==3:
+            if dell_inspiron.estado == 'ligado':
+                nome = str(input("Digite nome do arquivo: ").strip())
+                tamanho = int(input("Digite o Tamanho do arquivo em GB: "))
+                dell_inspiron.criar_arquivo(nome, tamanho)
+            else:
+                print("Computador Desligado!")       
+        elif opcao==4:
+            print(f"Capacidade disponivel do HD está em {dell_inspiron.capacidade_hd_max} GB")
+        elif opcao==5:
+            print(dell_inspiron.listar_arquivos())
+        elif opcao==6:
+            print(dell_inspiron.deletar_arquivo())    
+        elif opcao==0:
+            break
         else:
-            print("Computador Desligado!")       
-    elif opcao==4:
-        print(f"Capacidade disponivel do HD está em {dell_inspiron.capacidade_hd_max} GB")
-
-    elif opcao==5:
-        print(dell_inspiron.listar_arquivos())
-        
-    elif opcao==6:
-        
-        print(dell_inspiron.deletar_arquivo())    
-    elif opcao==0:
-        break
-    else:
-        print("Opcao invalida!")
+            print("Opção invalida!")
+    except:
+        print(f"Erro na operação!!!")

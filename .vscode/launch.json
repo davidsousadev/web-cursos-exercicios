@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MyFirstApiApplication",
+            "request": "launch",
+            "mainClass": "david.myfirstapi.MyFirstApiApplication",
+            "projectName": "my-first-api"
+        },
+        {
+            "type": "java",
             "name": "ProjetoDioJavaApplication",
             "request": "launch",
             "mainClass": "david.springboot.ProjetoDioJavaApplication",

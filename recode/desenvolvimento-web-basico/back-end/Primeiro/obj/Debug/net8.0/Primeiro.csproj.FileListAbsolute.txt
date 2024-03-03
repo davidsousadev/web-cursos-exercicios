@@ -1,0 +1,15 @@
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/obj/Debug/net8.0/Primeiro.GeneratedMSBuildEditorConfig.editorconfig
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/obj/Debug/net8.0/Primeiro.AssemblyInfoInputs.cache
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/obj/Debug/net8.0/Primeiro.AssemblyInfo.cs
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/obj/Debug/net8.0/Primeiro.csproj.CoreCompileInputs.cache
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/obj/Debug/net8.0/Primeiro.sourcelink.json
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/bin/Debug/net8.0/Primeiro
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/bin/Debug/net8.0/Primeiro.deps.json
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/bin/Debug/net8.0/Primeiro.runtimeconfig.json
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/bin/Debug/net8.0/Primeiro.dll
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/bin/Debug/net8.0/Primeiro.pdb
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/obj/Debug/net8.0/Primeiro.dll
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/obj/Debug/net8.0/refint/Primeiro.dll
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/obj/Debug/net8.0/Primeiro.pdb
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/obj/Debug/net8.0/Primeiro.genruntimeconfig.cache
+/home/david/Documentos/linux/web-cursos-exercicios/recode/desenvolvimento-web-basico/back-end/Primeiro/obj/Debug/net8.0/ref/Primeiro.dll

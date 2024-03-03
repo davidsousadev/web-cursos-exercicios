@@ -1,5 +1,6 @@
 {
     "files.autoSave": "afterDelay",
     "editor.wordWrap": "on",
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "dotnet.defaultSolution": "Primeiro.sln"
 }

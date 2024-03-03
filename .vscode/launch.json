@@ -6,6 +6,19 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Exemplo01",
+            "request": "launch",
+            "mainClass": "java_ii.Exemplo01",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Exemplo01",
+            "request": "launch",
+            "mainClass": "Exemplo01"
+        },
+        {
+            "type": "java",
             "name": "MyFirstApiApplication",
             "request": "launch",
             "mainClass": "david.myfirstapi.MyFirstApiApplication",

@@ -1,0 +1,23 @@
+Pergunta 4: Analise as seguintes afirmações sobre recursos avançados de revisão no Microsoft Word:
+I. O recurso "Comparar Documentos" permite visualizar as diferenças entre duas versões diferentes de um mesmo documento.
+II. A função "Revisão de Texto" oferece sugestões de gramática e ortografia para melhorar a qualidade do texto.
+III. A opção "Proteger Documento" permite restringir a edição de um documento, permitindo que apenas usuários autorizados façam alterações.
+IV. O recurso "Controlar Alterações" registra todas as edições feitas em um documento, incluindo adições, exclusões e alterações de formatação.
+
+Quais afirmações estão corretas?
+a) I e II apenas.
+b) I e III apenas.
+c) II e IV apenas.
+d) III e IV apenas.
+e) I, II, III e IV.
+
+ A) e) I, II, III e IV.
+
+ B) a) I e II apenas.
+
+ C) b) I e III apenas.
+
+ D) c) II e IV apenas.
+
+ E) d) III e IV apenas.
+

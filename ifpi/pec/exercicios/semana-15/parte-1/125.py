@@ -4,7 +4,7 @@ def carrega_cidades(mesA, valor):
     resultado = []
     aniversariantes = []
     print(f"CIDADES COM MAIS DE {valor} HABITANTES E ANIVERSÁRIO EM {meses(mesA)}:")
-    with open('cidades.csv', 'r', encoding='utf-8') as arquivo:
+    with open('ifpi/pec/exercicios/semana-15/parte-1/cidades.csv', 'r', encoding='utf-8') as arquivo:
         for linha in arquivo:
             uf, ibge, nome, dia, mes, pop = linha.split(';')
             if int(pop)>=valor and int(mes)==mesA:

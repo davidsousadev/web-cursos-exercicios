@@ -1,12 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.jsx';
+import './index.css';
+import './Api.jsx';
+import Api from './Api.jsx';
 
+const nome = "David.";
 
-  ReactDOM.createRoot(document.getElementById('root')).render(
+  ReactDOM.render(
     <React.StrictMode>
-      <App />
+       <App name={nome} />  {/*name is props */}
+       <Api />
     </React.StrictMode>,
-  )
+    document.getElementById('root')
+  );
 

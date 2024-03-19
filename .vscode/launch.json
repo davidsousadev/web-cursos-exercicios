@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Exercicio1",
+            "request": "launch",
+            "mainClass": "Exercicio1"
+        },
+        {
+            "type": "java",
             "name": "Exemplo01",
             "request": "launch",
             "mainClass": "java_ii.Exemplo01",

@@ -6,6 +6,25 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Carro",
+            "request": "launch",
+            "mainClass": "Carro",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Bicicleta",
+            "request": "launch",
+            "mainClass": "atividade.Bicicleta"
+        },
+        {
+            "type": "java",
+            "name": "Bicicleta",
+            "request": "launch",
+            "mainClass": "Bicicleta"
+        },
+        {
+            "type": "java",
             "name": "Exercicio1",
             "request": "launch",
             "mainClass": "Exercicio1"

@@ -6,6 +6,73 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ParOuImpar",
+            "request": "launch",
+            "mainClass": "ParOuImpar",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "RestoDaDivisao",
+            "request": "launch",
+            "mainClass": "RestoDaDivisao",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Multiplicacao",
+            "request": "launch",
+            "mainClass": "Multiplicacao",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Soma",
+            "request": "launch",
+            "mainClass": "Soma"
+        },
+        {
+            "type": "java",
+            "name": "Nome",
+            "request": "launch",
+            "mainClass": "Nome"
+        },
+        {
+            "type": "java",
+            "name": "Questaox",
+            "request": "launch",
+            "mainClass": "atividade.Questaox",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Aluno",
+            "request": "launch",
+            "mainClass": "Aluno"
+        },
+        {
+            "type": "java",
+            "name": "Questao5",
+            "request": "launch",
+            "mainClass": "Questao5",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Questao4",
+            "request": "launch",
+            "mainClass": "Questao4",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Questaox",
+            "request": "launch",
+            "mainClass": "trabalhoAvaliativo.Questaox",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Carro",
             "request": "launch",
             "mainClass": "Carro",

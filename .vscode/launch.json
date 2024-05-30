@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DesafioDavidSousaDaSilva",
+            "request": "launch",
+            "mainClass": "DesafioDavidSousaDaSilva",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",

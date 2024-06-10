@@ -3,7 +3,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class Banco {
     public static void main(String[] args) {
         // Cria a lista de strings
         List<String> lista = new ArrayList<>();

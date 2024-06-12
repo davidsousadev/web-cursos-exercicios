@@ -1,13 +1,18 @@
 package src;
 
 public class Atendente {
-    String nome;
-    
-     public Atendente(String nome) {
+    private String nome;
+
+    public Atendente(String nome) {
         this.nome = nome;
     }
 
     public String getNome() {
         return nome;
+    }
+
+    @Override
+    public String toString() {
+        return "Atendente: " + nome;
     }
 }

@@ -1,5 +1,4 @@
 
-
 /**
 * UNIVERSIDADE FEDERAL DO PIAUÍ
 * CENTRO DE EDUCAÇÃO ABERTA E A DISTÂNCIA
@@ -23,41 +22,34 @@ BancoEmFuncionamento, onde, contendo um método main, irá fazer o banco funcion
 
 Não se deve usar a classe List (ou derivadas) nativa do Java para este trabalho. Caso use receberá zero na nota.
 Esta especificação de sistema acima é só uma base, sinta-se livre para incrementar a ideia e tornar seu trabalho mais rico de detalhes.
-Postar no SIGAA um arquivo .zip contendo todas as classes do seu sistema **/
-
-//import java.util.InputMismatchException;
-//import java.util.Scanner;
+Postar no SIGAA um arquivo .zip contendo todas as classes do seu sistema 
+**/
 
 package src;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class BancoEmFuncionamento {
-    public static void main(String[] args) throws Exception {
-        
-        FilaClientes filaClientes =  new FilaClientes(10);
-        System.out.println(filaClientes);
-        Cliente cliente = new Cliente("David", "14785236987");
-        Cliente cliente2 = new Cliente("David", "14785236987");
-        filaClientes.enqueue(cliente);
-        filaClientes.enqueue(cliente2);
-        System.out.println(filaClientes);
-    }
-}
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int opcao = 0;
+        FilaAtendentes filaAtendentes = new FilaAtendentes(5);
+        String nomeAtendente;
+        FilaClientes filaClientes = new FilaClientes(20);
+        String nomeCliente;
+        String cpfCliente;
+        int numeroDoAtendimento = 0;
 
-/*int 
-Scanner entrada = new Scanner(System.in);
-        
-
-opcao = 0;
         System.out.println("----------- Bem vindo ao David Bank -------------");
         do {
             System.out.println("--------------------- Menu ----------------------");
-            System.out.println("1 = Criar cadastro.");
-            
-            System.out.println("2 = Imprimir Lista Original.");
-            System.out.println("3 = Converter lista para maiúsculas.");
-            System.out.println("4 = Remover strings que contêm a letra 'a'.");
-            System.out.println("5 = Imprimir Lista Final Modificada.");
-            
+            System.out.println("1 = Adicionar atendentes. Capacidade(5)");
+            System.out.println("2 = Listar atendentes.");
+            System.out.println("3 = Adicionar clientes. Capacidade(20)");
+            System.out.println("4 = Listar Clientes.");
+            System.out.println("5 = Iniciar atendimentos.");
+            System.out.println("6 = Adicione em massa 5 atendentes e 20 clientes pre-cadastrados.");
             System.out.println("0 = Sair.");
             System.out.println("-------------------------------------------------");
             System.out.print("Digite uma das opções acima: ");
@@ -68,23 +60,96 @@ opcao = 0;
                 entrada.nextLine();
                 System.out.println();
             } catch (InputMismatchException e) {
-                // entrada.nextLine();
+                entrada.nextLine();
                 opcao = -1;
                 System.out.println();
             }
             switch (opcao) {
                 case 1:
-                    System.out.print("Digite seu primeiro nome completo: ");
-                    String nome = entrada.nextLine();
-                    System.out.print("Digite seu cpf (Apenas os digitos): ");
-                    String cpf = entrada.nextLine();
-                    System.out.println("\nNome: " + nome + " CPF: " + cpf);
-                    // Cliente.cadastro(nome, cpf);
-                    System.out.println("Cadastro realizado com sucesso!");
+                    // Criar atendente
+                    if(!filaAtendentes.isFull()){
+                    System.out.print("Digite o nome do atendente: ");
+                    nomeAtendente = entrada.nextLine();
+                    filaAtendentes.enqueue(new Atendente(nomeAtendente));
+                    System.out.println("Atendente: " + nomeAtendente + ", adicionado com sucesso!\n");
+                    } else{
+                        System.out.println("Já atingiu o total de atendentes!\n");
+                    }
                     break;
+                case 2:
+                    // Listar atendentes
+                    System.out.println(filaAtendentes);
+                    break;
+                case 3:
+                    // Criar cliente
+                    if(!filaClientes.isFull()){
+                    System.out.print("Digite o nome do cliente: ");
+                    nomeCliente = entrada.nextLine();
+                    System.out.print("\nDigite o CPF do cliente (apenas os digitos): ");
+                    cpfCliente = entrada.nextLine();
+                    filaClientes.enqueue(new Cliente(nomeCliente, cpfCliente));
+                    System.out.println("Cliente: " + nomeCliente + ", adicionado com sucesso!\n");
+                    } else{
+                            System.out.println("Já atingiu o total de clientes!\n");
+                    }
+                    break;
+                case 4:
+                    // Listar Clientes
+                    System.out.println(filaClientes);
+                    break;
+                case 5:
+                    // Criação do Banco foi criado e lista de atendimentos
+                    if (!filaAtendentes.isEmpty() && !filaClientes.isEmpty()) {
+                        Banco banco = new Banco(filaAtendentes, filaClientes);
+                        while (!banco.getFilaClientes().isEmpty()) {
+                            Atendimento atendimento = banco.atenderClientes();
+                            System.out.println("Atendimento #"+(numeroDoAtendimento + 1)+": " + atendimento);
+                            numeroDoAtendimento++;
+                        }
+                        
+                    } else {
+                        System.out.println("Adicione atendentes e clientes!!!!\n");
+                    }
+                    break;
+                case 6:
+                    // Adição em massa
+                    if (filaAtendentes.isEmpty() && filaClientes.isEmpty()) {
+                    filaAtendentes.enqueue(new Atendente("Aldemir"));
+                    filaAtendentes.enqueue(new Atendente("Berenice"));
+                    filaAtendentes.enqueue(new Atendente("Carlos"));
+                    filaAtendentes.enqueue(new Atendente("David"));
+                    filaAtendentes.enqueue(new Atendente("Edivaldo"));
+                    filaClientes.enqueue(new Cliente("Cliente 1", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 2", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 3", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 4", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 5", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 6", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 7", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 8", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 9", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 10", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 11", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 12", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 13", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 14", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 15", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 16", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 17", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 18", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 19", "14785236987"));
+                    filaClientes.enqueue(new Cliente("Cliente 20", "14785236987"));
+                    System.out.println("5 atendentes e 20 clientes adicionados com sucesso!\n");
+                }
+                else{
+                    System.out.println("Não foi possivel adicionar em massa pois já foi adicionando manualmente atendente(s) e ou cliente(s) contunue adicionando!\n");
+                }
+                    break;
+
                 // Encerrar o programa
                 case 0:
-                    System.out.println("Programa Finalizado!\n");
+                    System.out.println("Atendimentos Finalizados!");
+                    System.out.println("Total de atendimentos realizados: " + numeroDoAtendimento);
                     break;
                 // Caso seja digitada uma opção inválida
                 default:
@@ -92,7 +157,8 @@ opcao = 0;
                     break;
             }
         } while (opcao != 0);
-         // Fechar os Scanner's.
+
+        // Fechar o Scanner
         entrada.close();
-        
-        */
+    }
+}

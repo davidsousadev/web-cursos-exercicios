@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BancoEmFuncionamento",
+            "request": "launch",
+            "mainClass": "src.BancoEmFuncionamento",
+            "projectName": "web-cursos-exercicios_b4ac8302"
+        },
+        {
+            "type": "java",
             "name": "DesafioDavidSousaDaSilva",
             "request": "launch",
             "mainClass": "DesafioDavidSousaDaSilva",

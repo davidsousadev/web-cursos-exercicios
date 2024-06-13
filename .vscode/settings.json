@@ -2,5 +2,8 @@
     "files.autoSave": "afterDelay",
     "editor.wordWrap": "on",
     "java.compile.nullAnalysis.mode": "automatic",
-    "dotnet.defaultSolution": "Primeiro.sln"
+    "dotnet.defaultSolution": "Primeiro.sln",
+    "java.project.sourcePaths": [
+        "ufpi/terceiro_semestre/estrutura_de_dados/trabalho02"
+    ]
 }

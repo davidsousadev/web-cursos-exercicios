@@ -33,18 +33,17 @@ public class FilaAtendentes {
         Atendente atendente = atendentes[inicio];
         inicio = (inicio + 1) % capacidade;
         tamanho--;
-        // Chamei a função de adicionar para inserir o atendente no final da fila dos atendentes, pois o atendente pode atender outros clientes depois de já ter atendido um cliente.
+        // Reenfileiramento do atendente no final da fila após o atendimento, garantindo disponibilidade para atender novos clientes. Os clientes são removidos da fila após o atendimento.
         enqueue(atendente);
         return atendente;
     }
-
+    // Retorna o primeiro atendente da fila sem removê-lo.
     public Atendente front() {
         if (isEmpty()) {
             throw new IllegalStateException("A fila está vazia!");
         }
         return atendentes[inicio];
     }
-
     public Boolean isEmpty() {
         return tamanho == 0;
     }
@@ -52,9 +51,9 @@ public class FilaAtendentes {
     public Boolean isFull() {
         return tamanho == capacidade;
     }
-    
+    //Ajustei a formatação da impressão da lista apenas para melhor visualização
     @Override
     public String toString() {
-        return "Fila de atendentes: " + Arrays.toString(atendentes);
+        return "Fila dos últimos atendentes: " + Arrays.toString(atendentes);
     }
 }

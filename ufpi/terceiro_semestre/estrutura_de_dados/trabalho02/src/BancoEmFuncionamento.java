@@ -1,4 +1,3 @@
-
 /**
 * UNIVERSIDADE FEDERAL DO PIAUÍ
 * CENTRO DE EDUCAÇÃO ABERTA E A DISTÂNCIA
@@ -19,18 +18,18 @@ FilaClientes que possui o atributo “Clientes[] clientes” e toda a implementa
 Banco, que possui os atributos: “Atendente[] atendentes” e “FilaClientes filaClientes”;
 Atendimento, que possui os atributos: “Cliente cliente” e “Atendente atendente”
 BancoEmFuncionamento, onde, contendo um método main, irá fazer o banco funcionar, criando atendentes, clientes e uma fila de clientes. Vai adicionar os clientes na fila e depois retirá-los da fila para criar atendimentos.
+ 
 
 Não se deve usar a classe List (ou derivadas) nativa do Java para este trabalho. Caso use receberá zero na nota.
 Esta especificação de sistema acima é só uma base, sinta-se livre para incrementar a ideia e tornar seu trabalho mais rico de detalhes.
-Postar no SIGAA um arquivo .zip contendo todas as classes do seu sistema 
-**/
-
+Postar no SIGAA um arquivo .zip contendo todas as classes do seu sistema **/
 package src;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class BancoEmFuncionamento {
+    // Método main
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int opcao = 0;
@@ -49,7 +48,7 @@ public class BancoEmFuncionamento {
             System.out.println("3 = Adicionar clientes. Capacidade(20)");
             System.out.println("4 = Listar Clientes.");
             System.out.println("5 = Iniciar atendimentos.");
-            System.out.println("6 = Adicione em massa 5 atendentes e 20 clientes pre-cadastrados.");
+            System.out.println("6 = Adicionar em massa 5 atendentes e 20 clientes pré-cadastrados.");
             System.out.println("0 = Sair.");
             System.out.println("-------------------------------------------------");
             System.out.print("Digite uma das opções acima: ");
@@ -73,12 +72,16 @@ public class BancoEmFuncionamento {
                     filaAtendentes.enqueue(new Atendente(nomeAtendente));
                     System.out.println("Atendente: " + nomeAtendente + ", adicionado com sucesso!\n");
                     } else{
-                        System.out.println("Já atingiu o total de atendentes!\n");
+                        System.out.println("Já atingiu o limite total de atendentes!\n");
                     }
                     break;
                 case 2:
                     // Listar atendentes
-                    System.out.println(filaAtendentes);
+                    if(!filaAtendentes.isEmpty()){
+                        System.out.println(filaAtendentes);
+                    } else{
+                        System.out.println("A lista de atendentes está vazia!\n");
+                    }
                     break;
                 case 3:
                     // Criar cliente
@@ -95,10 +98,14 @@ public class BancoEmFuncionamento {
                     break;
                 case 4:
                     // Listar Clientes
+                    if(!filaClientes.isEmpty()){
                     System.out.println(filaClientes);
+                    } else{
+                        System.out.println("A lista de clientes está vazia!\n");
+                    }
                     break;
                 case 5:
-                    // Criação do Banco foi criado e lista de atendimentos
+                    // Cria a instância do Banco e processa a lista de atendimentos
                     if (!filaAtendentes.isEmpty() && !filaClientes.isEmpty()) {
                         Banco banco = new Banco(filaAtendentes, filaClientes);
                         while (!banco.getFilaClientes().isEmpty()) {
@@ -106,13 +113,12 @@ public class BancoEmFuncionamento {
                             System.out.println("Atendimento #"+(numeroDoAtendimento + 1)+": " + atendimento);
                             numeroDoAtendimento++;
                         }
-                        
                     } else {
-                        System.out.println("Adicione atendentes e clientes!!!!\n");
+                        System.out.println("Adicione atendentes e ou clientes!!!!\n");
                     }
                     break;
                 case 6:
-                    // Adição em massa
+                    // Adição automática de 5 atendentes e 20 clientes pré-cadastrados para otimizar o processo de avaliação
                     if (filaAtendentes.isEmpty() && filaClientes.isEmpty()) {
                     filaAtendentes.enqueue(new Atendente("Aldemir"));
                     filaAtendentes.enqueue(new Atendente("Berenice"));
@@ -142,7 +148,7 @@ public class BancoEmFuncionamento {
                     System.out.println("5 atendentes e 20 clientes adicionados com sucesso!\n");
                 }
                 else{
-                    System.out.println("Não foi possivel adicionar em massa pois já foi adicionando manualmente atendente(s) e ou cliente(s) contunue adicionando!\n");
+                    System.out.println("Não foi possivel adicionar em massa pois já foram adicionandos atendente(s) e ou cliente(s) continue adicionando!\n");
                 }
                     break;
 

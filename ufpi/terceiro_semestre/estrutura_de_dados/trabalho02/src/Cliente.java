@@ -1,5 +1,5 @@
 package src;
-
+// Atributos: “String nome” e “String cpf”.
 public class Cliente {
     String nome;
     String cpf;
@@ -8,17 +8,17 @@ public class Cliente {
         this.nome = nome;
         this.cpf = cpf;
     }
+    
     // Getters
     public String getNome() {
         return nome;
     }
-
     public String getCpf() {
         return cpf;
     }
     @Override
     public String toString() {
-        return "Nome:" + nome +" - CPF:" + cpf;
+        return "Nome: " + nome +" - CPF: " + cpf;
     }
 }
 

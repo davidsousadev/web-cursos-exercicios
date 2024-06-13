@@ -8,11 +8,10 @@ public class Atendimento {
         this.cliente = cliente;
         this.atendente = atendente;
     }
-
+    // Getters
     public Cliente getCliente() {
         return cliente;
     }
-
     public Atendente getAtendente() {
         return atendente;
     }

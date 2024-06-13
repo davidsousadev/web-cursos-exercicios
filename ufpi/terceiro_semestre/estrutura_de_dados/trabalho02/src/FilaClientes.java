@@ -1,7 +1,7 @@
 package src;
 
 import java.util.Arrays;
-
+// Segue toda a implementação dos métodos de fila mostrado na vídeo-aula.
 public class FilaClientes {
     private Cliente[] clientes;
     private int capacidade;
@@ -53,7 +53,7 @@ public class FilaClientes {
 
     @Override
     public String toString() {
-        return "Fila de clientes: " + Arrays.toString(clientes);
+        return "Fila dos últimos clientes: " + Arrays.toString(clientes);
     }
 }
 

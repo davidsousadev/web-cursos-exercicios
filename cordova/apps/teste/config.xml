@@ -5,7 +5,12 @@
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
+    <access origin="*" />
+    <allow-navigation href="*" />
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    
+    <!-- Adicionando o plugin SQLite -->
+    <plugin name="cordova-sqlite-storage" spec="~6.0.0" />
 </widget>

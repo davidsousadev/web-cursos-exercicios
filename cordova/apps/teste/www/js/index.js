@@ -1,29 +1,58 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-
-// Wait for the deviceready event before using any of Cordova's device APIs.
-// See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
-    // Cordova is now initialized. Have fun!
-
-    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
+    console.log('Cordova is now initialized');
     document.getElementById('deviceready').classList.add('ready');
+}
+
+function fetchBibleVerse() {
+    const book = document.getElementById('book').value;
+    const chapter = document.getElementById('chapter').value;
+
+    if (!book || !chapter) {
+        alert('Please enter both book and chapter.');
+        return;
+    }
+
+    const apiUrl = `https://www.abibliadigital.com.br/api/verses/nvi/${book}/${chapter}`;
+
+    console.log('Fetching Bible verses from:', apiUrl);
+
+    fetch(apiUrl, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        console.log('Response status:', response.status);
+        return response.json();
+    })
+    .then(data => {
+        console.log('Data received from API:', data);
+        displayBibleVerse(data);
+    })
+    .catch(error => {
+        console.error('Error fetching the Bible verse:', error);
+    });
+}
+
+function displayBibleVerse(data) {
+    console.log('Displaying Bible verses:', data.verses);
+    const verseContainer = document.getElementById('bible-verse');
+    if (verseContainer) {
+        verseContainer.innerHTML = ''; // Limpa qualquer conteúdo existente
+        if (data && data.verses && Array.isArray(data.verses)) {
+            data.verses.forEach(verse => {
+                const verseElement = document.createElement('p');
+                verseElement.textContent = `${verse.number}: ${verse.text}`;
+                verseContainer.appendChild(verseElement);
+            });
+        } else {
+            console.error('Invalid data structure:', data);
+        }
+    } else {
+        console.error('Element with ID "bible-verse" not found');
+    }
 }

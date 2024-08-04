@@ -1,5 +1,0 @@
-deb_dist
-dist
-yourapp.egg-info
-*.gz
-*.tar

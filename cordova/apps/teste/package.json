@@ -12,12 +12,18 @@
   ],
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
-  "devDependencies": {
-    "cordova-android": "^13.0.0"
-  },
   "cordova": {
     "platforms": [
       "android"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-battery-status": {},
+      "cordova-sqlite-storage": {}
+    }
+  },
+  "devDependencies": {
+    "cordova-android": "^13.0.0",
+    "cordova-plugin-battery-status": "^2.0.3",
+    "cordova-sqlite-storage": "^6.1.0"
   }
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumir API com Web Workers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        #json-output {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #fff;
+            max-width: 600px;
+            word-break: break-word;
+        }
+        pre {
+            white-space: pre-wrap; /* Mantém a formatação do JSON */
+        }
+    </style>
+</head>
+<body>
+    <div id="json-output">
+        <h1>Resposta da API</h1>
+        <pre id="json-data">Carregando...</pre>
+    </div>
+    <script>
+        const worker = new Worker('worker.js');
+        worker.onmessage = function(e) {
+            document.getElementById('json-data').textContent = JSON.stringify(e.data, null, 2);
+        };
+        worker.postMessage('https://davidsousaplay.pythonanywhere.com/users/name/s');
+    </script>
+</body>
+</html>

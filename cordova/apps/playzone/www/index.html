@@ -18,27 +18,6 @@
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -46,59 +25,53 @@
     <div id="app">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
-            <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
-                <div class="toolbar-inner display-flex">
-                    <a href="/index/" class="tab-link link active">
-                        <i class="mdi mdi-home"></i>
-                        <span>Home</span>
-                    </a>
-                    <a href="/link2/" class="tab-link link">
-                        <i class="mdi mdi-gamepad-outline"></i>
-                        <span>Games</span>
-                    </a>
-                    <a href="/link3/" class="tab-link link">
-                        <i class="mdi mdi-account"></i>
-                        <span>Contatos</span>
-                    </a>
-
-                </div>
-            </div>
-
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="index" class="page color-theme-blue">
-
                 <!-- Top Navbar -->
                 <div class="navbar">
                     <div class="navbar-bg"></div>
                     <div class="navbar-inner justify-content-center">
-                        <div class="title ">Play Zone</div>
+                        <div class="title">Play Zone</div>
                     </div>
                 </div>
-
                 <!-- Scrollable page content -->
                 <div class="page-content">
-                    <div class="block">      
+                    <div class="block">
                         <!-- Conteudo -->
-                        <h1>SQLite CRUD Example</h1>
-                        <form id="crud-form">
-                            <input type="hidden" id="item-id">
-                            <label for="value">Value:</label>
-                            <input type="text" id="value" required>
-                            <button type="submit">Save</button>
+                        <form id="login-form">
+                            <div class="list no-hairlines-md">
+                                <ul>
+                                    <li class="item-content item-input">
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">Login</div>
+                                            <div class="item-input-wrap">
+                                                <input type="text" name="username" placeholder="Digite seu login" required>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-input">
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">Senha</div>
+                                            <div class="item-input-wrap">
+                                                <input type="password" name="password" placeholder="Digite sua senha" required>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label class="item-checkbox item-content">
+                                            <input type="checkbox" name="save-login">
+                                            <i class="icon icon-checkbox"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">Salvar login para entrar automaticamente da próxima vez</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="block">
+                                <button type="submit" class="button button-fill">Entrar</button>
+                            </div>
                         </form>
-                        <h2>Items</h2>
-                        <table id="items-table">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Value</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-                    
                     </div>
                 </div>
             </div>
@@ -106,11 +79,12 @@
     </div>
     <!-- Path to Framework7 Library Bundle JS-->
     <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
-	<!-- jQuery -->
-	<script type="text/javascript" src="lib/jquery-3.7.1.min.js"></script>	
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.1.min.js"></script>  
     <!-- Roteamento do app-->
     <script type="text/javascript" src="js/routes.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+
     
 </body>
 

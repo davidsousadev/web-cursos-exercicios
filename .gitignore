@@ -2,3 +2,4 @@
 ifpi/bd/atividades
 *.class
 .fake
+.venv

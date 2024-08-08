@@ -28,18 +28,18 @@
             <!-- TAB BAR-->
             <div class="toolbar toolbar-bottom">
                 <div class="toolbar-inner display-flex">
-                    <a href="/link1/" class="tab-link link active">
+                    <button id="home" class="tab-link link active">
                         <i class="mdi mdi-home"></i>
                         <span>Home</span>
                     </a>
-                    <a href="/link2/" class="tab-link link">
+                    <button id="games" class="tab-link link">
                         <i class="mdi mdi-gamepad-outline"></i>
                         <span>Games</span>
-                    </a>
-                    <a href="/link3/" class="tab-link link">
+                    </button>
+                    <button id="contatos" class="tab-link link">
                         <i class="mdi mdi-account"></i>
                         <span>Contatos</span>
-                    </a>
+                    </button>
                     
                 </div>
             </div>
@@ -58,8 +58,8 @@
                 <div class="page-content">
                     <div class="block">      
                         <!-- Conteudo -->
-                        <h2>Usuário: <span id="username">undefined</span></h2>
-                        <h2>Score: <span id="score">0000</span></h2>
+                        <h2>Usuário: <span id="username"></span></h2>
+                        <h2>Score: <span id="score">0</span></h2>
                     </div>
                 </div>
             </div>
@@ -74,8 +74,37 @@
     <script type="text/javascript" src="js/index.js"></script>
     
     
-    <script>
-       
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Função para extrair parâmetros da URL
+            function getParameterByName(name, url = window.location.href) {
+                name = name.replace(/[\[\]]/g, '\\$&');
+                const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+                const results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            const username = getParameterByName('user');  // Assumindo que 'user' é o nome do parâmetro na URL
+
+            if (!username) {
+                console.error('Username não encontrado na URL');
+                return;
+            }
+            $('#go-to-sorter').click(function() {
+                window.location.href = "sorter.html?user=" + encodeURIComponent(username);
+            });
+            $('#home').click(function() {
+                window.location.href = "link1.html?user=" + encodeURIComponent(username);
+            });
+            $('#games').click(function() {
+                window.location.href = "link2.html?user=" + encodeURIComponent(username);
+            });
+            $('#contatos').click(function() {
+                window.location.href = "link3.html?user=" + encodeURIComponent(username);
+            });
+        });
     </script>
 </body>
 

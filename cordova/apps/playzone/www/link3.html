@@ -29,19 +29,37 @@
         <div class="view view-main">
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="link3" class="page">
-
+                 <!-- TAB BAR-->
+            <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex">
+                    <button id="home" class="tab-link link active">
+                        <i class="mdi mdi-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <button id="games" class="tab-link link">
+                        <i class="mdi mdi-gamepad-outline"></i>
+                        <span>Games</span>
+                    </button>
+                    <button id="contatos" class="tab-link link">
+                        <i class="mdi mdi-account"></i>
+                        <span>Contatos</span>
+                    </button>
+                    
+                </div>
+            </div>
                 <!-- Top Navbar -->
                 <div class="navbar">
+
                     <div class="navbar-bg"></div>
                     <div class="navbar-inner justify-content-center">
-                        <div class="title ">Link 3</div>
+                        <div class="title ">Contatos</div>
                     </div>
                 </div>
 
                 <!-- Scrollable page content -->
                 <div class="page-content">
                     <div class="block">
-                        Conteúdo do link 3
+                        Email...
                     </div>
                 </div>
             </div>
@@ -53,7 +71,39 @@
 	<script type="text/javascript" src="lib/jquery-3.7.1.min.js"></script>	
     <!-- Roteamento do app-->
     <script type="text/javascript" src="js/routes.js"></script>
-    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Função para extrair parâmetros da URL
+            function getParameterByName(name, url = window.location.href) {
+                name = name.replace(/[\[\]]/g, '\\$&');
+                const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+                const results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            const username = getParameterByName('user');  // Assumindo que 'user' é o nome do parâmetro na URL
+
+            if (!username) {
+                console.error('Username não encontrado na URL');
+                return;
+            }
+            $('#go-to-sorter').click(function() {
+                window.location.href = "sorter.html?user=" + encodeURIComponent(username);
+            });
+            $('#home').click(function() {
+                window.location.href = "link1.html?user=" + encodeURIComponent(username);
+            });
+            $('#games').click(function() {
+                window.location.href = "link2.html?user=" + encodeURIComponent(username);
+            });
+            $('#contatos').click(function() {
+                window.location.href = "link3.html?user=" + encodeURIComponent(username);
+            });
+        });
+    </script>
 </body>
 
 </html>

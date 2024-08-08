@@ -36,7 +36,7 @@ $(document).ready(function() {
         // Função para buscar os dados do usuário e do score
         function fetchUserData() {
             // Substitua a URL pela URL correta da sua API
-            //var apiUrl = `https://davidsousaplay.pythonanywhere.com/users/name/${encodeURIComponent(username)}`;
+            var apiUrl = `https://davidsousaplay.pythonanywhere.com/users/name/${encodeURIComponent(username)}`;
             
             fetch(apiUrl, {
                 method: 'GET',

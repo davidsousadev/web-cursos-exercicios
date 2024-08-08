@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Sorter</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU -->
+    <link rel="stylesheet" href="css/personalizado.css">
+    <!-- Ícones Material Design -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+             <!-- TAB BAR-->
+             <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex">
+                    <button id="home" class="tab-link link active">
+                        <i class="mdi mdi-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <button id="games" class="tab-link link">
+                        <i class="mdi mdi-gamepad-outline"></i>
+                        <span>Games</span>
+                    </button>
+                    <button id="contatos" class="tab-link link">
+                        <i class="mdi mdi-account"></i>
+                        <span>Contatos</span>
+                    </button>
+                    
+                </div>
+            </div>
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="sorter" class="page">
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner justify-content-center">
+                        <div class="title">Sorter</div>
+                    </div>
+                </div>
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block">
+                        <!-- Exibe o resultado do jogo -->
+                        <div id="result"></div>
+                        <!-- Botão de voltar -->
+                        <button id="denovo">Jogar novamente?</button>
+                        <button id="back-button">Voltar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS -->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.1.min.js"></script>
+    <!-- Roteamento do app -->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/sorter.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Função para extrair parâmetros da URL
+            function getParameterByName(name, url = window.location.href) {
+                name = name.replace(/[\[\]]/g, '\\$&');
+                const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+                const results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            const username = getParameterByName('user');  // Assumindo que 'user' é o nome do parâmetro na URL
+
+            if (!username) {
+                console.error('Username não encontrado na URL');
+                return;
+            }
+            $('#go-to-sorter').click(function() {
+                window.location.href = "sorter.html?user=" + encodeURIComponent(username);
+            });
+            $('#home').click(function() {
+                window.location.href = "link1.html?user=" + encodeURIComponent(username);
+            });
+            $('#games').click(function() {
+                window.location.href = "link2.html?user=" + encodeURIComponent(username);
+            });
+            $('#contatos').click(function() {
+                window.location.href = "link3.html?user=" + encodeURIComponent(username);
+            });
+        });
+    </script>
+</body>
+
+</html>

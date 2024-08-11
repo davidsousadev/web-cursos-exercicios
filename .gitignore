@@ -3,3 +3,5 @@ ifpi/bd/atividades
 *.class
 .fake
 .venv
+*kivy_venv
+/projetopython/projetokivy/downloads/*

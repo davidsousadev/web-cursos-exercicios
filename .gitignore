@@ -5,3 +5,4 @@ ifpi/bd/atividades
 .venv
 *kivy_venv
 /projetopython/projetokivy/downloads/*
+*myenv

@@ -3,6 +3,7 @@ from toga.style import Pack
 from toga.style.pack import COLUMN
 import yt_dlp
 import os
+import subprocess
 
 class Down(toga.App):
     def startup(self):
@@ -17,51 +18,68 @@ class Down(toga.App):
         self.url_input.placeholder = 'Enter YouTube URL'
         main_box.add(self.url_input)
 
+        # Add a selection for download format
+        self.format_select = toga.Selection(items=['mp3', 'mp4'], style=Pack(padding=(0, 5)))
+        main_box.add(self.format_select)
+
         # Add a button to start download
-        download_button = toga.Button('Download Video', on_press=self.download_video, style=Pack(padding=5))
+        download_button = toga.Button('Download', on_press=self.download_media, style=Pack(padding=5))
         main_box.add(download_button)
 
-        # Add a button to open the video
-        self.open_button = toga.Button('Open Video', on_press=self.open_video, style=Pack(padding=5))
-        self.open_button.enabled = False
-        main_box.add(self.open_button)
+        # Add a button to play the downloaded media
+        self.play_button = toga.Button('Play Media', on_press=self.play_media, style=Pack(padding=5))
+        self.play_button.enabled = False
+        main_box.add(self.play_button)
 
         self.main_window = toga.MainWindow(title=self.formal_name)
         self.main_window.content = main_box
         self.main_window.show()
 
-    def download_video(self, widget):
+    def download_media(self, widget):
         url = self.url_input.value
-        if url:
+        download_format = self.format_select.value
+        if url and download_format:
             try:
                 self.download_path = os.path.join(self.get_application_directory(), 'Downloads')
 
                 if not os.path.exists(self.download_path):
                     os.makedirs(self.download_path)
 
-                ydl_opts = {
-                    'outtmpl': os.path.join(self.download_path, '%(title)s.%(ext)s'),
-                }
+                if download_format == 'mp3':
+                    ydl_opts = {
+                        'format': 'bestaudio/best',
+                        'postprocessors': [{
+                            'key': 'FFmpegExtractAudio',
+                            'preferredcodec': 'm3u',
+                            'preferredquality': '192',
+                        }],
+                        'outtmpl': os.path.join(self.download_path, '%(id)s.%(ext)s'),  # Save as id.mp3
+                    }
+                else:
+                    ydl_opts = {
+                        'format': 'bestvideo+bestaudio',
+                        'outtmpl': os.path.join(self.download_path, '%(id)s.%(ext)s'),  # Save as id.mp4
+                    }
 
                 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     ydl.download([url])
 
-                self.main_window.info_dialog('Download Complete', 'Video downloaded successfully.')
-                self.open_button.enabled = True
+                self.main_window.info_dialog('Download Complete', 'Media downloaded successfully.')
+                self.play_button.enabled = True
             except Exception as e:
-                self.main_window.info_dialog('Error', f'Failed to download video: {e}')
+                self.main_window.info_dialog('Error', f'Failed to download media: {e}')
         else:
-            self.main_window.info_dialog('Error', 'Please enter a valid YouTube URL.')
+            self.main_window.info_dialog('Error', 'Please enter a valid YouTube URL and select a format.')
 
-    def open_video(self, widget):
-        video_file = os.listdir(self.download_path)[0]  # Assume there's only one file
-        video_path = os.path.join(self.download_path, video_file)
-
-        # Call the native Android activity to play the video
-        intent = self.get_main_activity().getIntent()
-        intent.setClassName("com.example.down", "com.example.down.VideoPlayerActivity")
-        intent.putExtra("videoPath", f'file://{video_path}')
-        self.get_main_activity().startActivity(intent)
+    def play_media(self, widget):
+        media_file = os.listdir(self.download_path)[0]  # Assume there's only one file
+        media_path = os.path.join(self.download_path, media_file)
+        
+        # Using VLC player to play the media
+        try:
+            subprocess.run(['vlc', media_path])
+        except Exception as e:
+            self.main_window.info_dialog('Error', f'Failed to play media: {e}')
 
     def get_application_directory(self):
         return os.path.join(os.path.expanduser('~'), 'myapp')

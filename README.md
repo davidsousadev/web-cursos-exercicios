@@ -2,4 +2,4 @@
 
 ## Cursos presenciais
 
-### [IFPI - Técnico em Desenvolvimento de Sistemas](/ifpi)
+### [IFPI - Técnico em Desenvolvimento de Sistemas](/ifpi/README.md)

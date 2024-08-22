@@ -1,0 +1,15 @@
+{
+  "name": "test-examples",
+  "version": "1.0.0",
+  "description": "Crie um Projeto Node.js e Instale Dependências",
+  "main": "math.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.0.0"
+  }
+}

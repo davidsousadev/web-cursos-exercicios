@@ -4,7 +4,7 @@
 
 ### [IFPI - Técnico em Desenvolvimento de Sistemas](/ifpi/README.md)
 
-### [UFPI -Licenciatura em Computação](/ifpi/README.md)
+### [UFPI - Licenciatura em Computação](/ufpi/README.md)
 
 ## Configurações
 

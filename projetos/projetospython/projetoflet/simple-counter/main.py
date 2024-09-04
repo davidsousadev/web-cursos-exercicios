@@ -51,11 +51,6 @@ def main(page: ft.Page):
         ydl_opts = {
             'format': 'bestaudio/best',
             'outtmpl': 'downloads/%(id)s.%(ext)s',
-            'postprocessors': [{
-                'key': 'FFmpegExtractAudio',
-                'preferredcodec': 'mp3',
-                'preferredquality': '192',
-            }],
         }
         try:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -73,14 +68,14 @@ def main(page: ft.Page):
         page.update()
 
     def play_audio(audio):
-        file_path = os.path.join('downloads', f"{audio.file_name}.mp3")
+        file_path = os.path.join('downloads', f"{audio.file_name}.m4a")
         if os.path.exists(file_path):
             subprocess.run(['xdg-open', file_path])
 
     def delete_audio(audio):
         session.delete(audio)
         session.commit()
-        file_path = os.path.join('downloads', f"{audio.file_name}.mp3")
+        file_path = os.path.join('downloads', f"{audio.file_name}.m4a")
         if os.path.exists(file_path):
             os.remove(file_path)
         refresh_download_list()

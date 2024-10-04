@@ -18,3 +18,6 @@
 #### Aula: Introdução e Estruturas Condicionais com Java
 
 > [If, Else, Operador ternario e Switch Case](/exercicios/src/Aula3.java)
+
+#### Aula: Estruturas de Repetição em Java
+> [For, For em Arrays, Break, While, Do while](/exercicios/src/Aula4.java)

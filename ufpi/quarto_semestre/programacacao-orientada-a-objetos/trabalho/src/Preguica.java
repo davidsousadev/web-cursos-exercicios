@@ -1,6 +1,6 @@
 public class Preguica extends Animal{
     public Preguica(String nome, int idade) {
-        super(nome, idade, "aaaaaa","Subir em árvores");
+        super(nome, idade, "aaa aaa","Subir em árvores");
     }
     public String movimento(){
         return getMovimento();

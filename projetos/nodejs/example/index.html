@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webhook Cliente</title>
+</head>
+<body>
+    <h1>Último Webhook Recebido</h1>
+    <pre id="dados"></pre>
+
+    <script>
+        const dadosContainer = document.getElementById('dados');
+
+        // Conecta ao WebSocket no servidor
+        const socket = new WebSocket('ws://localhost:4000');
+
+        // Evento disparado quando a conexão é estabelecida
+        socket.onopen = () => {
+            console.log('Conexão WebSocket estabelecida.');
+        };
+
+        // Evento disparado ao receber mensagem do servidor
+        socket.onmessage = (event) => {
+            const dados = JSON.parse(event.data);
+            console.log('Dados recebidos via WebSocket:', dados);
+
+            // Atualiza o conteúdo na tela
+            dadosContainer.innerText = JSON.stringify(dados, null, 2);
+
+            // Exibe um alerta
+            //alert('Novo webhook recebido!');
+        };
+
+        // Evento disparado quando a conexão é fechada
+        socket.onclose = () => {
+            console.log('Conexão WebSocket fechada.');
+        };
+
+        // Evento disparado em caso de erro
+        socket.onerror = (error) => {
+            console.error('Erro no WebSocket:', error);
+        };
+    </script>
+</body>
+</html>

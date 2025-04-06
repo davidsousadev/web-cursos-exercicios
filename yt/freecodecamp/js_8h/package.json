@@ -1,0 +1,23 @@
+{
+  "name": "js_8h",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:coverage:html": "jest --coverage --coverageReporters=html",
+    "test:coverage:lcov": "jest --coverage --coverageReporters=lcov",
+    "test:coverage:json": "jest --coverage --coverageReporters=json",
+    "test:coverage:clover": "jest --coverage --coverageReporters=clover",
+    "test:coverage:text": "jest --coverage --coverageReporters=text",
+    "test:coverage:text-summary": "jest --coverage --coverageReporters=text-summary",
+    "test:coverage:json-summary": "jest --coverage --coverageReporters=json-summary"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

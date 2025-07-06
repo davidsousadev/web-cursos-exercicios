@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refúgio - Sobreviventes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="theme-twd">
+
+    <header class="site-header">
+        <div class="logo">
+            <img src="assets/images/logo.png" width="200" alt="Logo Refúgio dos Sobreviventes">
+        </div>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobreviventes</a></li>
+                <li><a href="#">Mapas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bar" role="separator" aria-hidden="true"></div>
+
+    <main class="content" role="main">
+        <!-- Navegação lateral -->
+        <aside class="sidebar" aria-label="Navegação lateral">
+            <h2>Tópicos</h2>
+            <ul>
+                <li><a href="#abrigo">Abrigos seguros</a></li>
+                <li><a href="#suprimentos">Rações e suprimentos</a></li>
+                <li><a href="#zonas">Zonas de perigo</a></li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <section class="main-article" aria-label="Conteúdo principal">
+            <article>
+                <header>
+                    <h1>Bem-vindo ao Refúgio</h1>
+                </header>
+                <p>Este é um ponto seguro para todos os sobreviventes. Fique atento às atualizações e compartilhe
+                    informações.</p>
+
+                <!-- Galeria de imagens com descrição -->
+                <section aria-label="Galeria de imagens">
+                    <h2>Imagens da série</h2>
+                    <figure>
+                        <img src="assets/images/twd-grupo.jpg" alt="Grupo de sobreviventes caminhando pela estrada" />
+                        <figcaption>O grupo de Rick Grimes em busca de um abrigo seguro.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/images/twd-negan.jpg" alt="Negan segurando o bastão Lucille" />
+                        <figcaption>Negan, um dos personagens mais temidos do universo TWD.</figcaption>
+                    </figure>
+                </section>
+
+                <!-- Vídeos com acessibilidade -->
+                <section aria-label="Vídeos da série">
+                    <h2>Assista aos trailers</h2>
+
+                    <div role="region" aria-label="Trailer da Primeira Temporada">
+                        <h3>Temporada 1 - Trailer Oficial</h3>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/sfAc2U20uyg"
+                            title="The Walking Dead - Trailer Temporada 1" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div role="region" aria-label="Trailer da série The Ones Who Live">
+                        <h3>The Ones Who Live (Rick & Michonne)</h3>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/CSiSA-D207o"
+                            title="The Ones Who Live - Trailer Oficial" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </section>
+
+                <!-- Áudio com fallback -->
+                <section aria-label="Trilha sonora TWD">
+                    <h2>Trilha sonora</h2>
+                    <audio controls autoplay loop>
+                        <source src="assets/audio/twd-theme.m4a" type="audio/mpeg">
+                        Seu navegador não suporta áudio HTML5.
+                    </audio>
+                    <p>Trilha sonora original de abertura da série.</p>
+                </section>
+            </article>
+        </section>
+
+        <!-- Navegação interna -->
+        <aside class="anchors" aria-label="Sumário do artigo">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#abrigo">Abrigos</a></li>
+                <li><a href="#suprimentos">Dicas de sobrevivência</a></li>
+                <li><a href="#zonas">Zonas críticas</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <p>&copy; 2025 Refúgio dos Sobreviventes. Inspirado em The Walking Dead (AMC).</p>
+        <p><a href="#topo" aria-label="Voltar ao topo da página">↑ Voltar ao topo</a></p>
+    </footer>
+</body>
+
+</html>

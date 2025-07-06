@@ -1,0 +1,110 @@
+/* TEMA GERAL */
+body.theme-twd {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* LINKS */
+a {
+    color: #ff4c4c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: #ff6666;
+}
+
+/* CABEÇALHO E RODAPÉ */
+.site-header,
+.site-footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #550000;
+}
+
+.site-footer {
+    border-top: 2px solid #550000;
+    border-bottom: none;
+}
+
+/* NAVEGAÇÃO PRINCIPAL */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: #e0e0e0;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: #550000;
+    color: #fff;
+}
+
+/* BARRA VERMELHA */
+.bar {
+    height: 4px;
+    background: linear-gradient(to right, #550000, #990000);
+    border-top: 1px solid #2b2b2b;
+}
+
+/* LAYOUT PRINCIPAL */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* SIDEBAR E ÂNCORAS */
+.sidebar,
+.anchors {
+    width: 20%;
+    min-width: 200px;
+    background-color: #222;
+    padding: 15px;
+    border-left: 4px solid #550000;
+}
+
+.sidebar h2,
+.anchors h2 {
+    border-bottom: 2px solid #ff4c4c;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main-article {
+    flex: 1;
+    min-width: 300px;
+    background-color: #2b2b2b;
+    padding: 25px;
+    border-left: 5px solid #ff4c4c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+/* IMAGENS */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+

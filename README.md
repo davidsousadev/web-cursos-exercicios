@@ -2,9 +2,9 @@
 
 ## Cursos presenciais
 
-### [IFPI - Técnico em Desenvolvimento de Sistemas](/ifpi/README.md)
+### [IFPI - Técnico em Desenvolvimento de Sistemas](https://github.com/davidsousadev/ifpi-tds)
 
-### [UFPI - Licenciatura em Computação](/ufpi/README.md)
+### [UFPI - Licenciatura em Computação](https://github.com/davidsousadev/ufpi-computacao)
 
 ## Configurações
 
